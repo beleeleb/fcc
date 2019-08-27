@@ -2,35 +2,36 @@
   --imgs-width: 70 %;
 }
 
-body{
-  font-family: Tahoma; 
+body {
+  font-family: Tahoma;
 }
 
 .grid-container {
   display: grid;
-    grid-template-areas: 
+  grid-template-areas:
     "header header header"
     "nav content sidebar"
     "footer footer footer";
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
 
 
 
 }
 
-.grid-header{
+.grid-header {
   grid-area: header;
   justify-self: center;
 }
 
-.grid-left{
+.grid-left {
   grid-area: nav;
 }
-.grid-main{
+
+.grid-main {
 
   grid-area: content;
   justify-self: center;
@@ -40,35 +41,38 @@ body{
   width: 100%;
   height: 100%;
 }
-.grid-main-text{
+
+.grid-main-text {
   justify-self: center;
 
 }
 
-.grid-main-photo{
+.grid-main-photo {
   align-self: center;
   position: relative;
   justify-self: center;
 
 }
-.grid-right{
+
+.grid-right {
   grid-area: sidebar;
 }
-.grid-footer{
+
+.grid-footer {
   grid-area: footer;
   justify-self: center;
 }
 
-h1{
+h1 {
   background-color: yellow;
-    color: blue;
+  color: blue;
 }
 
 #img-div {
   width: var(--imgs-width);
 }
 
-#image{
+#image {
   max-width: 100%;
   display: block;
   height: auto;
@@ -81,7 +85,7 @@ h1{
 
 }
 
-#image:hover{
+#image:hover {
   transform: rotate(360deg) scale(1.5);
 }
 
