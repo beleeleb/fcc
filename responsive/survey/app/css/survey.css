@@ -1,0 +1,33 @@
+body {
+  font-family: Tahoma;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header "
+    "content "
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.grid-header {
+  grid-area: header;
+  justify-self: center;
+}
+
+
+.grid-main {
+
+  grid-area: content;
+  justify-self: center;
+}
+
+.grid-footer {
+  grid-area: footer;
+  justify-self: center;
+}
