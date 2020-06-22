@@ -75,31 +75,161 @@ body {
   grid-area: form-fields;
   background-color: grey;
   display: grid;
-  grid-template-areas:
-   "a b . c d"
-   "a b . c d"
-   "a b . c d
-   "a b . c d"
-   "a b . c d";
-   grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
-   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr 4fr;
+  grid-template-rows: repeat(10,1fr);
 }
 
 .dog-name{
   grid-column: 1/2;
-  grid-row: 1/2;
+  grid-row: 2/3;
   background-color: lightsalmon;
 }
 
+.photo{
+  grid-column: 3/4;
+  grid-row: 3/4;
+  background-color: lightsalmon;
+  margin: 0;  
+  
+}
+
+input{
+  width: 100%;
+  padding: 0;
+  border: 0;
+}
+.dog-name-in{
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-color: white;
+}
 
 .breed-name{
   grid-column: 1/2;
-  grid-row: 2/3;
+  grid-row: 4/5;
+}
+
+.breed-name-in{
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 5/6;
+  background-color: white;
+}
+
+.bday{
+  grid-column: 3/4;
+  grid-row: 4/5;
   background-color: lightseagreen;
+}
+
+.bday-in{
+  grid-column: 3/4;
+  grid-row: 5/6;
+  background-color: white;
+}
+
+.gender{
+  grid-column: 1/2;
+  grid-row: 6/7;
+  background-color: lightseagreen;
+}
+
+.gender-in{
+  display: flex;
+  
+  grid-column: 1/2;
+  grid-row: 7/8;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+
+.genderf{
+  background-color: limegreen;
+}
+
+.genderm{
+  background-color:  lawngreen;
+  
+
+}
+.sp-ne{
+  grid-column: 3/4;
+  grid-row: 6/7;
+  background-color: lightseagreen;
+}
+
+.sp-ne-in{
+  display: flex;
+  grid-column: 3/4;
+  grid-row: 7/8;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.sprayed{
+  background-color: limegreen;
+}
+
+.neutered{
+  background-color: lawngreen;
+}
+
+.weight{
+  grid-column: 1/2;
+  grid-row: 8/9;
+  background-color: lightseagreen;
+}
+
+.weight-in{
+  list-style-type:none;
+  padding:0;
+  margin: 0;
+  display: flex;
+  grid-column: 1/4;
+  grid-row: 9/10;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.s-weight{
+  background-color: darkmagenta;
+}
+
+.m-weight{
+  background-color: darkcyan;
+}
+
+.l-weight{
+  background-color: darkkhaki;
+}
+
+.xl-weight{
+  background-color: darkblue;
 }
 
 .form-footer{
   grid-area: form-footer;
   background-color: lightblue;
+
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+}
+
+.bck-btn{
+ grid-column: 1/2;
+ background-color: blueviolet;
+}
+
+.next-btn{
+  grid-column: 5/6;
+
+  background-color: darkgray;
 }
 /*https://colorhunt.co/palette/177866*/
