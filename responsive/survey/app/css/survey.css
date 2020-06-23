@@ -53,41 +53,71 @@ body {
   grid-area: form;
   background-color: green;
   height: 100%;
-  display: grid;
+ /* display: grid;
   grid-template-areas:
    ". form-head ." 
    ". form-fields ."
    ". form-footer .";
    grid-template-columns: 1fr 6fr 1fr;
-   grid-template-rows: 1fr 3fr 1fr;
+   grid-template-rows: 1fr 3fr 1fr;*/
+   display:flex;
+   flex-flow: wrap;
+   justify-content: center;
 }
 
 
 .form-header{
-  grid-area: form-head;
+  /*grid-area: form-head;*/
   background-color: white;
   display: flex;
   justify-content: right;
   align-items: center;
+  height: 20%;
+  width: 80%;
 }
 
 .form-fields{
-  grid-area: form-fields;
+  display: flex;
   background-color: grey;
+ /* grid-area: form-fields;
   display: grid;
   grid-template-columns: 4fr 1fr 4fr;
-  grid-template-rows: repeat(10,1fr);
+  grid-template-rows: repeat(10,1fr);*/
+  height: 60%;
+  width: 80%;
+  flex-flow: wrap;
+ justify-content: space-between;
 }
 
+.dogField {
+  display: flex;
+  width: 45%;
+  height: 10%;
+  flex-flow: wrap;
+}
 .dog-name{
-  grid-column: 1/2;
-  grid-row: 2/3;
+ /* grid-column: 1/2;
+  grid-row: 2/3;*/
+  width: 100%;
+  height: 100%;
   background-color: lightsalmon;
 }
 
+.dog-name-in{
+  height: 100%;
+ 
+    /*
+    grid-column: 1/2;
+    grid-row: 3/4;*/
+    background-color: white;
+  }
+
 .photo{
-  grid-column: 3/4;
-  grid-row: 3/4;
+ /* grid-column: 3/4;
+  grid-row: 3/4;*/
+  display: flex;
+  width: 45%;
+  height: 10%;
   background-color: lightsalmon;
   margin: 0;  
   
@@ -98,48 +128,75 @@ input{
   padding: 0;
   border: 0;
 }
-.dog-name-in{
-  display: grid;
-  grid-column: 1/2;
-  grid-row: 3/4;
-  background-color: white;
-}
 
+.breedField
+{
+  display: flex;
+  width: 45%;
+  height: 10%;
+  flex-flow: wrap;
+}
 .breed-name{
-  grid-column: 1/2;
-  grid-row: 4/5;
+  /*grid-column: 1/2;
+  grid-row: 4/5;*/
+  width: 100%;
+  height: 100%;
+  background-color: lightsalmon;
+
 }
 
 .breed-name-in{
-  display: grid;
-  grid-column: 1/2;
-  grid-row: 5/6;
+/*  grid-column: 1/2;
+  grid-row: 5/6;*/
+  width: 100%;
+  height: 100%;
   background-color: white;
 }
-
+.bdayField
+{
+  display: flex;
+  width: 45%;
+  height: 10%;
+  flex-flow: wrap;
+}
 .bday{
-  grid-column: 3/4;
-  grid-row: 4/5;
+  /*grid-column: 3/4;
+  grid-row: 4/5;*/
+  width: 100%;
+  height: 100%;
   background-color: lightseagreen;
 }
 
 .bday-in{
-  grid-column: 3/4;
-  grid-row: 5/6;
+  /*-column: 3/4;
+  grid-row: 5/6;*/
+  width: 100%;
+  height: 100%;
   background-color: white;
 }
 
+.genderField
+{
+  display: flex;
+  width: 45%;
+  height: 10%;
+  flex-flow: wrap;
+}
+
 .gender{
-  grid-column: 1/2;
-  grid-row: 6/7;
+  width: 100%;
+  height: 100%;
+  /*grid-column: 1/2;
+  grid-row: 6/7;*/
   background-color: lightseagreen;
 }
 
 .gender-in{
   display: flex;
-  
-  grid-column: 1/2;
-  grid-row: 7/8;
+  width: 100%;
+  height: 100%;
+ /* grid-column: 1/2;
+  grid-row: 7/8;*/
   background-color: white;
   justify-content: space-around;
   align-items: center;
@@ -156,16 +213,29 @@ input{
   
 
 }
+
+.spneField
+{
+  display: flex;
+  width: 45%;
+  height: 10%;
+  flex-flow: wrap;
+}
+
 .sp-ne{
-  grid-column: 3/4;
-  grid-row: 6/7;
+  /*grid-column: 3/4;
+  grid-row: 6/7;*/
+  width: 100%;
+  height: 100%;
   background-color: lightseagreen;
 }
 
 .sp-ne-in{
   display: flex;
-  grid-column: 3/4;
-  grid-row: 7/8;
+ /* grid-column: 3/4;
+  grid-row: 7/8;*/
+  width: 100%;
+  height: 100%;
   background-color: white;
   justify-content: space-around;
   align-items: center;
@@ -179,11 +249,19 @@ input{
 .neutered{
   background-color: lawngreen;
 }
-
+.weightField
+{
+  display: flex;
+  width: 45%;
+  height: 10%;
+  flex-flow: wrap;
+}
 .weight{
-  grid-column: 1/2;
-  grid-row: 8/9;
+  /*grid-column: 1/2;
+  grid-row: 8/9;*/
   background-color: lightseagreen;
+  width: 100%;
+  height: 100%;
 }
 
 .weight-in{
@@ -191,11 +269,13 @@ input{
   padding:0;
   margin: 0;
   display: flex;
-  grid-column: 1/4;
-  grid-row: 9/10;
+  /*grid-column: 1/4;
+  grid-row: 9/10;*/
   background-color: white;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .s-weight{
@@ -215,21 +295,26 @@ input{
 }
 
 .form-footer{
-  grid-area: form-footer;
   background-color: lightblue;
-
+ /* grid-area: form-footer;
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr 1fr 2fr 2fr;*/
+  display: flex;
+  height: 20%;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .bck-btn{
- grid-column: 1/2;
+ /*grid-column: 1/2;*/
+ width: 20%;
  background-color: blueviolet;
 }
 
 .next-btn{
-  grid-column: 5/6;
-
+ /* grid-column: 5/6;*/
+ width: 20%;
   background-color: darkgray;
 }
 /*https://colorhunt.co/palette/177866*/
