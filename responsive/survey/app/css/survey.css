@@ -18,7 +18,7 @@ body {
   justify-self: center;
   display: grid;
   grid-template-areas:
-   "nav form";
+    "nav form";
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   width: 80%;
@@ -29,117 +29,123 @@ body {
 
 .survey-nav {
   grid-area: nav;
-  background-color: red;
+  background-color: #545871;
   height: 100%;
   display: grid;
   grid-template-areas:
-   ". nav-head ." 
-   ". nav-btns .";
-   grid-template-columns: 2fr 4fr 2fr;
-   grid-template-rows: 1fr 4fr;
+    ". nav-head ."
+    ". nav-btns .";
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: 1fr 4fr;
 }
 
-.nav-header{
+.nav-header {
   grid-area: nav-head;
   background-color: purple;
 }
 
-.nav-btns{
+.nav-btns {
   grid-area: nav-btns;
   background-color: pink;
 }
 
 .survey-form {
   grid-area: form;
-  background-color: green;
+  background-color: #faeceb;
   height: 100%;
   display: grid;
   grid-template-areas:
-   ". form-head ." 
-   ". form-fields ."
-   ". form-footer .";
-   grid-template-columns: 1fr 6fr 1fr;
-   grid-template-rows: 1fr 3fr 1fr;
+    ". form-head ."
+    ". form-fields ."
+    ". form-footer .";
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
 }
 
 
-.form-header{
+.form-header {
   grid-area: form-head;
-  background-color: white;
+  background-color: rgb(255, 222, 34);
   display: flex;
   justify-content: right;
   align-items: center;
 }
 
-.form-fields{
+.form-fields {
   grid-area: form-fields;
-  background-color: grey;
+  background-color: #faeceb;
   display: grid;
-  grid-template-columns: 4fr 1fr 4fr;
-  grid-template-rows: repeat(10,1fr);
+  grid-gap: 10px 10px;
+
+  /* grid-template-columns: 4fr 1fr 4fr;*/
+
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto, 1fr);
 }
 
-.dog-name{
-  grid-column: 1/2;
-  grid-row: 2/3;
+.dog-name {
+  display: grid;
+
+  grid-template-rows: repeat(2, 1fr);
+
+  background-color: lightseagreen;
+
+}
+
+.photo {
+
   background-color: lightsalmon;
+  margin: 0;
+
 }
 
-.photo{
-  grid-column: 3/4;
-  grid-row: 3/4;
-  background-color: lightsalmon;
-  margin: 0;  
-  
-}
-
-input{
+input {
   width: 100%;
   padding: 0;
   border: 0;
 }
-.dog-name-in{
-  display: grid;
-  grid-column: 1/2;
-  grid-row: 3/4;
+
+
+.dog-name-in {
   background-color: white;
 }
 
-.breed-name{
-  grid-column: 1/2;
-  grid-row: 4/5;
+.breed-name {
+  display: grid;
+  background-color: lightseagreen;
+
+  grid-template-rows: repeat(2, 1fr);
+
 }
 
-.breed-name-in{
-  display: grid;
-  grid-column: 1/2;
-  grid-row: 5/6;
+
+.breed-name-in {
+
   background-color: white;
 }
 
-.bday{
-  grid-column: 3/4;
-  grid-row: 4/5;
+.bday {
+
+  display: grid;
+
+  grid-template-rows: repeat(2, 1fr);
   background-color: lightseagreen;
 }
 
-.bday-in{
-  grid-column: 3/4;
-  grid-row: 5/6;
+.bday-in {
+
   background-color: white;
 }
 
-.gender{
-  grid-column: 1/2;
-  grid-row: 6/7;
+.gender {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+
   background-color: lightseagreen;
 }
 
-.gender-in{
+.gender-in {
   display: flex;
-  
-  grid-column: 1/2;
-  grid-row: 7/8;
   background-color: white;
   justify-content: space-around;
   align-items: center;
@@ -147,74 +153,75 @@ input{
 
 }
 
-.genderf{
+.genderf {
   background-color: limegreen;
 }
 
-.genderm{
-  background-color:  lawngreen;
-  
+.genderm {
+  background-color: lawngreen;
+
 
 }
-.sp-ne{
-  grid-column: 3/4;
-  grid-row: 6/7;
+
+.sp-ne {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
   background-color: lightseagreen;
 }
 
-.sp-ne-in{
+.sp-ne-in {
   display: flex;
-  grid-column: 3/4;
-  grid-row: 7/8;
   background-color: white;
   justify-content: space-around;
   align-items: center;
 
 }
 
-.sprayed{
+.sprayed {
   background-color: limegreen;
 }
 
-.neutered{
+.neutered {
   background-color: lawngreen;
 }
 
-.weight{
-  grid-column: 1/2;
-  grid-row: 8/9;
+.weight {
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
   background-color: lightseagreen;
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
-.weight-in{
-  list-style-type:none;
-  padding:0;
+.weight-in {
+  list-style-type: none;
+  padding: 0;
   margin: 0;
   display: flex;
-  grid-column: 1/4;
-  grid-row: 9/10;
+
   background-color: white;
   justify-content: space-around;
   align-items: center;
 }
 
-.s-weight{
+.s-weight {
   background-color: darkmagenta;
 }
 
-.m-weight{
+.m-weight {
   background-color: darkcyan;
 }
 
-.l-weight{
+.l-weight {
   background-color: darkkhaki;
 }
 
-.xl-weight{
+.xl-weight {
   background-color: darkblue;
 }
 
-.form-footer{
+.form-footer {
   grid-area: form-footer;
   background-color: lightblue;
 
@@ -222,14 +229,15 @@ input{
   grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
 }
 
-.bck-btn{
- grid-column: 1/2;
- background-color: blueviolet;
+.bck-btn {
+  grid-column: 1/2;
+  background-color: blueviolet;
 }
 
-.next-btn{
+.next-btn {
   grid-column: 5/6;
 
   background-color: darkgray;
 }
+
 /*https://colorhunt.co/palette/177866*/
