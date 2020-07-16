@@ -38,19 +38,48 @@ body {
     ". nav-list .";
   grid-template-columns: 2fr 5fr 2fr;
   grid-template-rows: 1fr 4fr 2fr;
-  background-image: url(../../assets/pngwing.com.png);
+  background-image: url(../../assets/pngwing.com.duo.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 50%;;
+  background-size: 50%;
 }
 
 .nav-list {
   grid-area: nav-list;
   background-color: pink;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
   align-items: center;
+
+}
+
+.radio-btns{
+  justify-self: center;
+}
+.labels{
+  justify-self: center;
+}
+.nav-item{
+  width: 100%;
+  display: flex;
+}
+.nav-radio{
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav-radio input{
+  height: 100%;
+  width: 100%;
+}
+
+  .nav-radio input:checked{
+    height: 100%;
+    width: 100%;
 }
 
 
