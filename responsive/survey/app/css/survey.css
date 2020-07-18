@@ -47,22 +47,22 @@ body {
 .nav-list {
   grid-area: nav-list;
   background-color: pink;
-  display: grid;
+ /* display: grid;
   grid-template-columns: 1fr 4fr;
-  align-items: center;
+  align-items: center;*/
 
 }
 
 .radio-btns{
   justify-self: center;
 }
-.labels{
+/*.labels{
   justify-self: center;
-}
-.nav-item{
+}*/
+/*.nav-item{
   width: 100%;
   display: flex;
-}
+}*/ 
 .nav-radio{
   height: 30px;
   width: 30px;
@@ -83,31 +83,10 @@ body {
 }
 
 
-@media only screen and (max-width: 800px) {
-
-  .grid-main {
-    grid-area: main-box;
-    justify-self: center;
-    display: grid;
-    grid-template-areas:
-      "nav form";
-    grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr;
-    width: 80%;
-    height: 80%;
-    align-items: center;
-    background-color: yellow;
-  }
- 
-  .nav-header-title{
-      display: none;
-  }
-
-  .nav-lbl{
-    display: none;
-  }
-
+.nav-lbl:checked{
+  background-color: red;
 }
+
 
 .nav-header {
   grid-area: nav-head;
@@ -140,7 +119,10 @@ body {
   justify-content: right;
   align-items: center;
 }
-
+.greet-header{
+  font-size:  30px;
+  font-weight: bold;
+}
 .form-fields {
   grid-area: form-fields;
   background-color: #faeceb;
@@ -219,8 +201,21 @@ input {
   background-color: white;
   justify-content: space-around;
   align-items: center;
+}
 
+#genderf {
+  display: none;
+}
 
+#genderm {
+  display: none;
+}
+#genderf:checked + .genderf{
+  background-color: yellow;
+}
+
+#genderm:checked + .genderm{
+  background-color: yellow;
 }
 
 .genderf {
@@ -229,8 +224,6 @@ input {
 
 .genderm {
   background-color: lawngreen;
-
-
 }
 
 .sp-ne {
@@ -246,6 +239,23 @@ input {
   align-items: center;
 
 }
+
+
+#sprayed {
+  display: none;
+}
+
+#neutered {
+  display: none;
+}
+#sprayed:checked + .sprayed{
+  background-color: yellow;
+}
+
+#neutered:checked + .neutered{
+  background-color: yellow;
+}
+
 
 .sprayed {
   background-color: limegreen;
@@ -275,6 +285,15 @@ input {
   align-items: center;
 }
 
+#s-weight  {
+  display: none;
+}
+
+
+#s-weight:checked + .s-weight  {
+  background-color: yellow;
+}
+
 .s-weight {
   background-color: darkmagenta;
 }
@@ -294,20 +313,63 @@ input {
 .form-footer {
   grid-area: form-footer;
   background-color: lightblue;
-
   display: grid;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
 }
 
 .bck-btn {
+  grid-row: 2/3;
   grid-column: 1/2;
   background-color: blueviolet;
+  border-radius: 25px;
+
 }
 
 .next-btn {
+  grid-row: 2/3;
   grid-column: 5/6;
 
   background-color: darkgray;
+  border-radius: 25px;
+
 }
+
+  .bck-btn:focus,.next-btn:focus {
+  background-color: yellow;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .grid-main {
+    grid-area: main-box;
+    justify-self: center;
+    display: grid;
+    grid-template-areas:
+      "nav form";
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    background-color: yellow;
+  }
+ 
+  .nav-header-title{
+      display: none;
+  }
+
+  .nav-lbl{
+    display: none;
+  }
+
+  .greet-header{
+    font-size:  20px;
+    font-weight: bold;
+  }
+
+}
+
+
 
 /*https://colorhunt.co/palette/177866*/
