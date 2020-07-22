@@ -131,7 +131,7 @@ body {
 
   /* grid-template-columns: 4fr 1fr 4fr;*/
 
-  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: repeat(auto, 1fr);
 }
 
@@ -157,6 +157,11 @@ input {
   border: 0;
 }
 
+.dog-name-lbl
+{
+ display: flex;
+ align-items: center;
+}
 
 .dog-name-in {
   background-color: white;
@@ -168,6 +173,13 @@ input {
 
   grid-template-rows: repeat(2, 1fr);
 
+}
+
+
+.breed-lbl
+{
+ display: flex;
+ align-items: center;
 }
 
 
@@ -189,11 +201,24 @@ input {
   background-color: white;
 }
 
+.bday-lbl
+{
+ display: flex;
+ align-items: center;
+}
+
+
 .gender {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
 
   background-color: lightseagreen;
+}
+
+.gender-lbl
+{
+ display: flex;
+ align-items: center;
 }
 
 .gender-in {
@@ -219,10 +244,20 @@ input {
 }
 
 .genderf {
+  width: 45%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: limegreen;
 }
 
 .genderm {
+  width: 45%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: lawngreen;
 }
 
@@ -238,6 +273,12 @@ input {
   justify-content: space-around;
   align-items: center;
 
+}
+
+.sp-ne-lbl
+{
+ display: flex;
+ align-items: center;
 }
 
 
@@ -258,10 +299,16 @@ input {
 
 
 .sprayed {
+  width: 45%;
+  height: 75%;
+  display: flex;
   background-color: limegreen;
 }
 
 .neutered {
+  width: 45%;
+  height: 75%;
+  display: flex;
   background-color: lawngreen;
 }
 
@@ -294,19 +341,57 @@ input {
   background-color: yellow;
 }
 
+
 .s-weight {
+  width: 22.5%;
+  height: 75%;
+  display: flex;
   background-color: darkmagenta;
 }
 
+#m-weight  {
+  display: none;
+}
+
+
+#m-weight:checked + .m-weight  {
+  background-color: yellow;
+}
+
 .m-weight {
+  width: 22.5%;
+  height: 75%;
+  display: flex;
   background-color: darkcyan;
 }
 
-.l-weight {
-  background-color: darkkhaki;
+#l-weight  {
+  display: none;
 }
 
+
+#l-weight:checked + .l-weight  {
+  background-color: yellow;
+}
+
+.l-weight {
+  width: 22.5%;
+  height: 75%;
+  display: flex;
+  background-color: darkkhaki;
+}
+#xl-weight  {
+  display: none;
+}
+
+
+#xl-weight:checked + .xl-weight  {
+  background-color: yellow;
+}
 .xl-weight {
+  width: 22.5%;
+  height: 75%;
+  display: flex;
   background-color: darkblue;
 }
 
