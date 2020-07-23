@@ -47,15 +47,26 @@ body {
 .nav-list {
   grid-area: nav-list;
   background-color: pink;
- /* display: grid;
+  display: grid;
   grid-template-columns: 1fr 4fr;
-  align-items: center;*/
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
 
+}
+/*
+.nav-lbls{
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+align-items: center;
+height: 80%;
 }
 
 .radio-btns{
-  justify-self: center;
-}
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  align-items: center;
+height: 80%;
+}*/
 /*.labels{
   justify-self: center;
 }*/
@@ -77,15 +88,11 @@ body {
   width: 100%;
 }
 
-  .nav-radio input:checked{
-    height: 100%;
-    width: 100%;
+  input[type="radio"]:checked + .nav-lbl{
+    background-color: red;
+
 }
 
-
-.nav-lbl:checked{
-  background-color: red;
-}
 
 
 .nav-header {
@@ -225,7 +232,7 @@ input {
   display: flex;
   background-color: white;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
 }
 
 #genderf {
@@ -244,21 +251,24 @@ input {
 }
 
 .genderf {
-  width: 45%;
-  height: 75%;
+  flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
+
   background-color: limegreen;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .genderm {
-  width: 45%;
-  height: 75%;
+  flex: 1;
   display: flex;
+
+  background-color: lawngreen;
+  margin: 5px;
   align-items: center;
   justify-content: center;
-  background-color: lawngreen;
+
 }
 
 .sp-ne {
@@ -271,7 +281,7 @@ input {
   display: flex;
   background-color: white;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
 
 }
 
@@ -299,17 +309,22 @@ input {
 
 
 .sprayed {
-  width: 45%;
-  height: 75%;
+  flex: 1;
   display: flex;
   background-color: limegreen;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .neutered {
-  width: 45%;
-  height: 75%;
+  flex: 1;
   display: flex;
   background-color: lawngreen;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
 .weight {
@@ -322,14 +337,10 @@ input {
 }
 
 .weight-in {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-
   background-color: white;
   justify-content: space-around;
-  align-items: center;
+  align-items: strech;
 }
 
 #s-weight  {
@@ -343,8 +354,10 @@ input {
 
 
 .s-weight {
-  width: 22.5%;
-  height: 75%;
+  flex: 1;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
   display: flex;
   background-color: darkmagenta;
 }
@@ -359,8 +372,10 @@ input {
 }
 
 .m-weight {
-  width: 22.5%;
-  height: 75%;
+  flex: 1;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
   display: flex;
   background-color: darkcyan;
 }
@@ -375,8 +390,10 @@ input {
 }
 
 .l-weight {
-  width: 22.5%;
-  height: 75%;
+  flex: 1;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
   display: flex;
   background-color: darkkhaki;
 }
@@ -389,10 +406,12 @@ input {
   background-color: yellow;
 }
 .xl-weight {
-  width: 22.5%;
-  height: 75%;
+  flex: 1;
+  margin: 5px;
   display: flex;
   background-color: darkblue;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-footer {
@@ -451,6 +470,16 @@ input {
   .greet-header{
     font-size:  20px;
     font-weight: bold;
+  }
+
+  .nav-list {
+    grid-area: nav-list;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+  
   }
 
 }
