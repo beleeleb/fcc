@@ -138,6 +138,7 @@ height: 80%;
 .greet-header{
   font-size:  30px;
   font-weight: bold;
+  margin: 0px;
 }
 .form-fields {
   grid-area: form-fields;
@@ -206,7 +207,7 @@ input {
   background-color: white;
 }
 
-.breed-name {
+.age {
   height: 50px;
 
   display: grid;
@@ -217,19 +218,19 @@ input {
 }
 
 
-.breed-lbl
+.age-lbl
 {
  display: flex;
  align-items: center;
 }
 
 
-.breed-name-in {
+.age-in {
 
   background-color: white;
 }
 
-.bday {
+.email {
   height: 50px;
 
   display: grid;
@@ -237,12 +238,12 @@ input {
   background-color: lightseagreen;
 }
 
-.bday-in {
+.email-in {
 
   background-color: white;
 }
 
-.bday-lbl
+.email-lbl
 {
  display: flex;
  align-items: center;
@@ -480,7 +481,9 @@ grid-template-rows: repeat(2, 1fr);
   background-color: #545871;
   border-radius: 25px;
 }
-
+.credit{
+  text-align: center;
+}
 @media only screen and (max-width: 800px) {
 
   .grid-main {
@@ -508,6 +511,7 @@ grid-template-rows: repeat(2, 1fr);
   .greet-header{
     font-size:  20px;
     font-weight: bold;
+    margin: 0px;
   }
 
   .nav-list {

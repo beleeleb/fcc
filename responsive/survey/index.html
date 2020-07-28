@@ -20,95 +20,105 @@
                                         </div>
                                 </div>
                                 <div class="nav-list">
-                                       <input class= "nav-radio" type="radio" name="radio-item" id="radio-item-1">
-                                        
+                                        <input class="nav-radio" type="radio" name="radio-item" id="radio-item-1">
+
                                         <label class="nav-lbl" for="radio-item-1">Human Profile</label>
 
                                         <input class="nav-radio" type="radio" name="radio-item" id="radio-item-2">
                                         <label class="nav-lbl" for="radio-item-2">Pet Basics</label>
 
-                                        <input class= "nav-radio" type="radio" checked="checked" name="radio-item"
-                                                        id="radio-item-3">
+                                        <input class="nav-radio" type="radio" checked="checked" name="radio-item"
+                                                id="radio-item-3">
                                         <label class="nav-lbl" for="radio-item-3">Pet Details</label>
 
 
-                                        <input class= "nav-radio" type="radio" name="radio-item" id="radio-item-4">
+                                        <input class="nav-radio" type="radio" name="radio-item" id="radio-item-4">
                                         <label class="nav-lbl" for="radio-item-4">Confirm</label>
 
                                 </div>
 
                         </div>
-                        <div class="survey-form">
+                        <form class="survey-form" id="survey-form">
 
                                 <div class="form-header">
-                                        <div class="greet-header">Yay, we love dogs! Give us the basics about your pup.
-                                        </div>
+                                        <h1 class="greet-header" id="title">Yay, we love dogs! Give us the basics about
+                                                your pup.
+                                        </h1>
                                 </div>
                                 <div class="form-fields">
-                                        <span class="dog-name">
-                                                <label for="dogName" class="dog-name-lbl">Name</label>
-                                                <input id="dogName" class="dog-name-in" type="text"
-                                                        placeholder="Pet's name">
-                                        </span>
-                                        <div class="camera">
+                                       
+                                                <span class="dog-name">
+                                                        <label for="name" id="name-label" class="dog-name-lbl">Name</label>
+                                                        <input id="name"  class="dog-name-in" type="text"
+                                                                placeholder="Pet's name" required>
+                                                </span>
+                                                <div class="camera">
                                                         <div class="camera-border">
-                                                        <img src="assets/ar-camera.svg"/>
+                                                                <img src="assets/ar-camera.svg" />
                                                         </div>
                                                         <div class="camera-lbl">
-                                                        Upload a photo
+                                                                Upload a photo
+                                                        </div>
                                                 </div>
-                                        </div>
-                                        <span class="breed-name">
+                                                <span class="email">
+                                                        <label for="email" id="email-label" class="email-lbl" >Email</label>
+                                                        <input id="email" class="email-in" type="email"
+                                                                placeholder="email@provider.com" required>
+                                                </span>
+                                                <span class="age">
+                                                        <label for="number" id="number-label" class="age-lbl">Age</label>
+                                                        <input id="number" type="number" min="1" max="150" class="age-in" type="text"
+                                                                placeholder="120">
+                                                </span>
 
-                                                <label for="breedName" class="breed-lbl">Breed</label>
-                                                <input id="breedName" class="breed-name-in" type="text"
-                                                        placeholder="Pet's breed">
-                                        </span>
-                                        <span class="bday">
-                                                <label for="bday" class="bday-lbl">Birthday</label>
-                                                <input id="bday" class="bday-in" type="text" placeholder="MM/DD/YYYY">
-                                        </span>
-                                        <span class="gender">
-                                                <label for="gender" class="gender-lbl">Gender</label>
-                                                <span id="gender" class="gender-in">
-                                                        <input type="radio" id="genderf" name="radio-gender" />
-                                                        <label for="genderf" class="genderf">Female</label>
-                                                        <input type="radio" id="genderm" name="radio-gender" />
-                                                        <label for="genderm" class="genderm">Male</label>
+                                                <span class="gender">
+                                                        <label for="gender" class="gender-lbl">Gender</label>
+                                                        <span id="gender" class="gender-in">
+                                                                <input type="radio" id="genderf" name="radio-gender" value="female"/>
+                                                                <label for="genderf" class="genderf">Female</label>
+                                                                <input type="radio" id="genderm" name="radio-gender" value="male" />
+                                                                <label for="genderm" class="genderm">Male</label>
+                                                        </span>
                                                 </span>
-                                        </span>
-                                        <span class="sp-ne">
-                                                <label for="sprayed-neutered" class="sp-ne-lbl">Sprayed or
-                                                        Neutered</label>
-                                                <span id="sprayed-neutered" class="sp-ne-in">
-                                                        <input type="radio" id="sprayed" name="radio-sp-ne" />
-                                                        <label for="sprayed" class="sprayed">Yes</label>
-                                                        <input type="radio" id="neutered" name="radio-sp-ne" />
-                                                        <label for="neutered" class="neutered">No</label>
+                                                <span class="sp-ne">
+                                                        <label for="sprayed-neutered" class="sp-ne-lbl">Sprayed or
+                                                                Neutered</label>
+                                                        <span id="sprayed-neutered" class="sp-ne-in">
+                                                                <input type="radio" id="sprayed" name="radio-sp-ne" />
+                                                                <label for="sprayed" class="sprayed">Yes</label>
+                                                                <input type="radio" id="neutered" name="radio-sp-ne" />
+                                                                <label for="neutered" class="neutered">No</label>
+                                                        </span>
                                                 </span>
-                                        </span>
-                                        <span class="weight">
-                                                <label for="weight" class="weight-lbl">Weight</label>
-                                                <div id="weight" class="weight-in">
-                                                        <input type="radio" id="s-weight" name="radio-weight" />
-                                                        <label for="s-weight" class="s-weight">0-25 lbs</label>
-                                                        <input type="radio" id="m-weight" name="radio-weight" />
-                                                        <label for="m-weight" class="m-weight">25-50 lbs</label>
-                                                        <input type="radio" id="l-weight" name="radio-weight" />
-                                                        <label for="l-weight" class="l-weight">50-100 lbs</label>
-                                                        <input type="radio" id="xl-weight" name="radio-weight" />
-                                                        <label for="xl-weight" class="xl-weight">100+ lbs</label>
-                                                </div>
-                                        </span>
+                                                <span class="weight">
+                                                        <label for="weight" class="weight-lbl">Weight</label>
+                                                        <div id="weight" class="weight-in">
+                                                                <input type="radio" id="s-weight" name="radio-weight" />
+                                                                <label for="s-weight" class="s-weight">0-25 lbs</label>
+                                                                <input type="radio" id="m-weight" name="radio-weight" />
+                                                                <label for="m-weight" class="m-weight">25-50 lbs</label>
+                                                                <input type="radio" id="l-weight" name="radio-weight" />
+                                                                <label for="l-weight" class="l-weight">50-100
+                                                                        lbs</label>
+                                                                <input type="radio" id="xl-weight"
+                                                                        name="radio-weight" />
+                                                                <label for="xl-weight" class="xl-weight">100+
+                                                                        lbs</label>
+                                                        </div>
+                                                </span>
                                 </div>
                                 <div class="form-footer">
 
                                         <input type="button" class="bck-btn" value="Back">
-                                        <input type="button" class="next-btn" value="Next">
+                                        <input type="submit" id="submit" class="next-btn" value="Next">
 
                                 </div>
-                        </div>
+                        </form>
                 </div>
+                <p class="credit" id="description">credit: survey is built on top of <a
+                                href="https://dribbble.com/shots/4362707-Create-your-pet-profile">this</a> beautiful
+                        design</p>
+
         </div>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
