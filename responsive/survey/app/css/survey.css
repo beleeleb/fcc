@@ -2,6 +2,7 @@ body {
   font-family: Tahoma;
 }
 
+
 .grid-container {
   display: grid;
   grid-template-areas: "main-box";
@@ -145,11 +146,7 @@ height: 80%;
   background-color: #faeceb;
   display: grid;
   grid-gap: 10px 10px;
-
-  /* grid-template-columns: 4fr 1fr 4fr;*/
-
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /*grid-template-rows: repeat(auto-fit, minmax(40px, 1fr));*/
 }
 
 .dog-name {
@@ -217,8 +214,22 @@ input {
 
 }
 
-
 .age-lbl
+{
+ display: flex;
+ align-items: center;
+}
+
+.breed{
+  height: 50px;
+
+  display: grid;
+  background-color: lightseagreen;
+
+  grid-template-rows: repeat(2, 1fr);
+
+}
+.breed-lbl
 {
  display: flex;
  align-items: center;
@@ -365,6 +376,74 @@ grid-template-rows: repeat(2, 1fr);
   justify-content: center;
 }
 
+.food {
+  height: 50px;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: lightseagreen;
+}
+
+.dry-wet-in {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  align-items: stretch;
+
+}
+
+.dry-wet-lbl
+{
+ display: flex;
+ align-items: center;
+}
+
+
+#dry {
+  display: none;
+}
+
+#wet {
+  display: none;
+}
+#dry:checked + .dry{
+  background-color: #c37e7b;
+}
+
+#wet:checked + .wet{
+  background-color: #c37e7b;
+}
+
+
+.dry {
+  flex: 1;
+  display: flex;
+  background-color: white;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.wet {
+  flex: 1;
+  display: flex;
+  background-color: white;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.general-text
+{
+  height: 50px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: lightseagreen;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
 .weight {
   height: 50px;
   display: grid;
@@ -373,6 +452,8 @@ grid-template-rows: repeat(2, 1fr);
   grid-column-start: 1;
   grid-column-end: -1;
 }
+
+
 
 .weight-lbl{
   display: flex;

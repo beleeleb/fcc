@@ -20,19 +20,22 @@
                                         </div>
                                 </div>
                                 <div class="nav-list">
-                                        <input class="nav-radio" type="radio" name="radio-item" id="radio-item-1">
+                                        <input class="nav-radio" type="radio" name="radio-item" id="radio-item-1"
+                                                value="Human Profile">
 
                                         <label class="nav-lbl" for="radio-item-1">Human Profile</label>
 
-                                        <input class="nav-radio" type="radio" name="radio-item" id="radio-item-2">
+                                        <input class="nav-radio" type="radio" name="radio-item" id="radio-item-2"
+                                                value="Pet Basics">
                                         <label class="nav-lbl" for="radio-item-2">Pet Basics</label>
 
                                         <input class="nav-radio" type="radio" checked="checked" name="radio-item"
-                                                id="radio-item-3">
+                                                id="radio-item-3" value="Pet Details">
                                         <label class="nav-lbl" for="radio-item-3">Pet Details</label>
 
 
-                                        <input class="nav-radio" type="radio" name="radio-item" id="radio-item-4">
+                                        <input class="nav-radio" type="radio" name="radio-item" id="radio-item-4"
+                                                value="Confirm">
                                         <label class="nav-lbl" for="radio-item-4">Confirm</label>
 
                                 </div>
@@ -46,66 +49,97 @@
                                         </h1>
                                 </div>
                                 <div class="form-fields">
-                                       
-                                                <span class="dog-name">
-                                                        <label for="name" id="name-label" class="dog-name-lbl">Name</label>
-                                                        <input id="name"  class="dog-name-in" type="text"
-                                                                placeholder="Pet's name" required>
-                                                </span>
-                                                <div class="camera">
-                                                        <div class="camera-border">
-                                                                <img src="assets/ar-camera.svg" />
-                                                        </div>
-                                                        <div class="camera-lbl">
-                                                                Upload a photo
-                                                        </div>
-                                                </div>
-                                                <span class="email">
-                                                        <label for="email" id="email-label" class="email-lbl" >Email</label>
-                                                        <input id="email" class="email-in" type="email"
-                                                                placeholder="email@provider.com" required>
-                                                </span>
-                                                <span class="age">
-                                                        <label for="number" id="number-label" class="age-lbl">Age</label>
-                                                        <input id="number" type="number" min="1" max="150" class="age-in" type="text"
-                                                                placeholder="120">
-                                                </span>
 
-                                                <span class="gender">
-                                                        <label for="gender" class="gender-lbl">Gender</label>
-                                                        <span id="gender" class="gender-in">
-                                                                <input type="radio" id="genderf" name="radio-gender" value="female"/>
-                                                                <label for="genderf" class="genderf">Female</label>
-                                                                <input type="radio" id="genderm" name="radio-gender" value="male" />
-                                                                <label for="genderm" class="genderm">Male</label>
-                                                        </span>
+                                        <span class="dog-name">
+                                                <label for="name" id="name-label" class="dog-name-lbl">Name</label>
+                                                <input id="name" class="dog-name-in" type="text"
+                                                        placeholder="Pet's name" required>
+                                        </span>
+                                        <div class="camera">
+                                                <div class="camera-border">
+                                                        <img src="assets/ar-camera.svg" />
+                                                </div>
+                                                <div class="camera-lbl">
+                                                        Upload a photo
+                                                </div>
+                                        </div>
+                                        <span class="email">
+                                                <label for="email" id="email-label" class="email-lbl">Email</label>
+                                                <input id="email" class="email-in" type="email"
+                                                        placeholder="email@provider.com" required>
+                                        </span>
+                                        <span class="age">
+                                                <label for="number" id="number-label" class="age-lbl">Age</label>
+                                                <input id="number" type="number" min="1" max="150" class="age-in"
+                                                        type="text" placeholder="120">
+                                        </span>
+                                        <span class="breed">
+                                                <label for="dropdown" class="breed-lbl">Breed</label>
+                                                <select id="dropdown" name="dropdown">
+                                                        <option value="volvo">Volvo</option>
+                                                        <option value="saab">Saab</option>
+                                                        <option value="opel">Opel</option>
+                                                        <option value="audi">Audi</option>
+                                                </select>
+                                        </span>
+                                        <span class="gender">
+                                                <label for="gender" class="gender-lbl">Gender</label>
+                                                <span id="gender" class="gender-in">
+                                                        <input type="radio" id="genderf" name="radio-gender"
+                                                                value="female" />
+                                                        <label for="genderf" class="genderf">Female</label>
+                                                        <input type="radio" id="genderm" name="radio-gender"
+                                                                value="male" />
+                                                        <label for="genderm" class="genderm">Male</label>
                                                 </span>
-                                                <span class="sp-ne">
-                                                        <label for="sprayed-neutered" class="sp-ne-lbl">Sprayed or
-                                                                Neutered</label>
-                                                        <span id="sprayed-neutered" class="sp-ne-in">
-                                                                <input type="radio" id="sprayed" name="radio-sp-ne" />
-                                                                <label for="sprayed" class="sprayed">Yes</label>
-                                                                <input type="radio" id="neutered" name="radio-sp-ne" />
-                                                                <label for="neutered" class="neutered">No</label>
-                                                        </span>
+                                        </span>
+                                        <span class="sp-ne">
+                                                <label for="sprayed-neutered" class="sp-ne-lbl">Sprayed or
+                                                        Neutered</label>
+                                                <span id="sprayed-neutered" class="sp-ne-in">
+                                                        <input type="radio" id="sprayed" name="radio-sp-ne"
+                                                                value="sprayed" />
+                                                        <label for="sprayed" class="sprayed">Yes</label>
+                                                        <input type="radio" id="neutered" name="radio-sp-ne"
+                                                                value="neutered" />
+                                                        <label for="neutered" class="neutered">No</label>
                                                 </span>
-                                                <span class="weight">
-                                                        <label for="weight" class="weight-lbl">Weight</label>
-                                                        <div id="weight" class="weight-in">
-                                                                <input type="radio" id="s-weight" name="radio-weight" />
-                                                                <label for="s-weight" class="s-weight">0-25 lbs</label>
-                                                                <input type="radio" id="m-weight" name="radio-weight" />
-                                                                <label for="m-weight" class="m-weight">25-50 lbs</label>
-                                                                <input type="radio" id="l-weight" name="radio-weight" />
-                                                                <label for="l-weight" class="l-weight">50-100
-                                                                        lbs</label>
-                                                                <input type="radio" id="xl-weight"
-                                                                        name="radio-weight" />
-                                                                <label for="xl-weight" class="xl-weight">100+
-                                                                        lbs</label>
-                                                        </div>
+                                        </span>
+                                        <span class="food">
+                                                <label for="dry-wet" class="dry-wet-lbl">Food</label>
+                                                <span id="dry-wet" class="dry-wet-in">
+                                                        <input type="checkbox" id="dry" name="dry"
+                                                                value="Dry" />
+                                                        <label for="dry" class="dry">Dry</label>
+                                                        <input type="checkbox" id="wet" name="wet"
+                                                                value="Wet"/>
+                                                        <label for="wet" class="wet">Wet</label>
                                                 </span>
+                                        </span>
+                                        <span class="weight">
+                                                <label for="weight" class="weight-lbl">Weight</label>
+                                                <div id="weight" class="weight-in">
+                                                        <input type="radio" id="s-weight" name="radio-weight"
+                                                                value="0-25 lbs" />
+                                                        <label for="s-weight" class="s-weight">0-25 lbs</label>
+                                                        <input type="radio" id="m-weight" name="radio-weight"
+                                                                value="25-50 lbs" />
+                                                        <label for="m-weight" class="m-weight">25-50 lbs</label>
+                                                        <input type="radio" id="l-weight" name="radio-weight"
+                                                                value="50-100 lbs" />
+                                                        <label for="l-weight" class="l-weight">50-100
+                                                                lbs</label>
+                                                        <input type="radio" id="xl-weight" name="radio-weight" value="100+
+                                                                lbs" />
+                                                        <label for="xl-weight" class="xl-weight">100+
+                                                                lbs</label>
+                                                </div>
+                                        </span>
+                                        <span class="general-text">
+                                                <label for="general-text" class="general-lbl">General</label>
+                                                <textarea id="general-text" name="general-text" rows="4"
+                                                        cols="50"></textarea>
+                                        </span>
                                 </div>
                                 <div class="form-footer">
 
