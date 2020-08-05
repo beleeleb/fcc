@@ -1,5 +1,5 @@
 body {
-  font-family: Tahoma;
+  font-family: 'Mulish', sans-serif;
   overflow: auto;
   display: flex;
   height: 100vh;
@@ -8,6 +8,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+* {
+  outline: none;
+  font-family: 'Mulish', sans-serif;
+
+}
+
 
 .credit-footer {
   display: flex;
@@ -28,7 +35,7 @@ body {
   width: 80%;
   height: 80%;
   align-items: center;
-  background-color: yellow;
+  /*background-color: yellow;*/
   border-radius: 25px;
 }
 
@@ -87,21 +94,18 @@ height: 80%;
   height: 20px;
   width: 20px;
   margin: 0;
- background-color: #9597a6;
+  background-color: #9597a6;
   appearance: none;
   border-radius: 50%;
 }
 
 
-.nav-radio:checked{
+.nav-radio:checked {
   background-color: #545871;
   height: 25px;
   width: 25px;
   border: 4px solid white;
-  }
-  
-
-
+}
 
 .nav-radio:checked+.nav-lbl {
   background-color: red;
@@ -147,6 +151,7 @@ height: 80%;
   font-size: 30px;
   font-weight: bold;
   margin: 0px;
+  font-family: 'Noto Serif', serif;
 }
 
 .form-fields {
@@ -201,6 +206,23 @@ input {
   border: 0;
 }
 
+input::placeholder{
+  font-family: 'Mulish', sans-serif;
+}
+
+select  {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  font-family: 'Mulish', sans-serif;
+
+}
+
+option{
+  font-family: 'Mulish', sans-serif;
+
+}
+
 .dog-name-lbl {
   display: flex;
   align-items: center;
@@ -216,7 +238,7 @@ input {
   display: grid;
   background-color: lightseagreen;
 
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2,25px);
 
 }
 
@@ -231,7 +253,7 @@ input {
   display: grid;
   background-color: lightseagreen;
 
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 25px);
 
 }
 
@@ -250,7 +272,7 @@ input {
   height: 50px;
 
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 25px);
   background-color: lightseagreen;
 }
 
@@ -269,7 +291,7 @@ input {
   height: 50px;
 
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 25px);
   background-color: lightseagreen;
 }
 
@@ -326,7 +348,7 @@ input {
   height: 50px;
 
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 25px);
   background-color: lightseagreen;
 }
 
@@ -384,7 +406,7 @@ input {
   height: 50px;
 
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 25px);
   background-color: lightseagreen;
 }
 
@@ -441,7 +463,7 @@ input {
 .general-text {
   height: 50px;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 25px);
   background-color: lightseagreen;
   grid-column-start: 1;
   grid-column-end: -1;
@@ -450,7 +472,7 @@ input {
 .weight {
   height: 50px;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 25px);
   background-color: lightseagreen;
   grid-column-start: 1;
   grid-column-end: -1;
@@ -467,7 +489,6 @@ input {
   display: flex;
   background-color: white;
   justify-content: space-around;
-  align-items: strech;
 }
 
 #s-weight {
@@ -551,6 +572,9 @@ input {
   grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
 }
 
+textarea{
+  resize: none;
+}
 .bck-btn {
   grid-row: 2/3;
   grid-column: 1/2;
@@ -564,9 +588,9 @@ input {
 .next-btn {
   grid-row: 2/3;
   grid-column: 5/6;
-
   background-color: #545871;
   border-radius: 25px;
+
 }
 
 .credit {
@@ -585,7 +609,7 @@ input {
     width: 80%;
     height: 80%;
     align-items: center;
-    background-color: yellow;
+    /*background-color: yellow;*/
   }
 
   .nav-header-title {
@@ -611,6 +635,24 @@ input {
     align-items: center;
 
   }
+
+  .weight {
+    height: 125px;
+    display: grid;
+    grid-template-rows: 25px 100px;
+    background-color: lightseagreen;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  
+
+  .weight-in {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    flex-flow: column;
+  }
+
 
 }
 
