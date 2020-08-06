@@ -570,10 +570,12 @@ option{
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+  align-items: center;
 }
 
 textarea{
   resize: none;
+
 }
 .bck-btn {
   grid-row: 2/3;
@@ -582,6 +584,7 @@ textarea{
   border-radius: 25px;
   border: solid black;
   border-width: thin;
+  height: 75%;
 
 }
 
@@ -590,6 +593,7 @@ textarea{
   grid-column: 5/6;
   background-color: #545871;
   border-radius: 25px;
+  height: 75%;
 
 }
 
@@ -597,7 +601,7 @@ textarea{
   text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1042px) {
 
   .grid-main {
     justify-self: center;
@@ -606,10 +610,52 @@ textarea{
       "nav form";
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr;
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     align-items: center;
     /*background-color: yellow;*/
+  }
+
+  .survey-form {
+    grid-area: form;
+    background-color: #faeceb;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+      ". form-head ."
+      ". form-fields ."
+      ". form-footer .";
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    border-radius: 0 25px 25px 0;
+  }
+
+  .form-footer {
+    grid-area: form-footer;
+    background-color: lightblue;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+    align-items: center;
+  }
+
+  .bck-btn {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: white;
+    border-radius: 25px;
+    border: solid black;
+    border-width: thin;
+    height: 50%;
+  }
+  
+  .next-btn {
+    grid-row: 1/2;
+    grid-column: 5/6;
+    background-color: #545871;
+    border-radius: 25px;
+    height: 50%;
+  
   }
 
   .nav-header-title {
@@ -637,9 +683,9 @@ textarea{
   }
 
   .weight {
-    height: 125px;
+    height: 150px;
     display: grid;
-    grid-template-rows: 25px 100px;
+    grid-template-rows: 25px 125px;
     background-color: lightseagreen;
     grid-column-start: 1;
     grid-column-end: -1;
@@ -651,6 +697,15 @@ textarea{
     background-color: white;
     justify-content: space-around;
     flex-flow: column;
+  }
+
+  .general-text {
+    height: 100px;
+    display: grid;
+    grid-template-rows: 25px 75px;
+    background-color: lightseagreen;
+    grid-column-start: 1;
+    grid-column-end: -1;
   }
 
 
