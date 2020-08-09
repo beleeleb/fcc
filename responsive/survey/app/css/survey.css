@@ -69,6 +69,12 @@ body {
 
 }
 
+
+.nav-header-icon{
+  width: 40px;
+  height: 40px;
+}
+
 /*
 .nav-lbls{
   display: grid;
@@ -90,6 +96,11 @@ height: 80%;
   width: 100%;
   display: flex;
 }*/
+
+.nav-lbl{
+  color: #545871;
+
+}
 .nav-radio {
   height: 20px;
   width: 20px;
@@ -108,7 +119,7 @@ height: 80%;
 }
 
 .nav-radio:checked+.nav-lbl {
-  background-color: red;
+  color: white;
 }
 
 
@@ -119,6 +130,7 @@ height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 
@@ -133,7 +145,7 @@ height: 80%;
     ". form-fields ."
     ". form-footer .";
   grid-template-columns: 1fr 6fr 1fr;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 3fr 0.75fr;
   border-radius: 0 25px 25px 0;
 
 }
@@ -141,10 +153,10 @@ height: 80%;
 
 .form-header {
   grid-area: form-head;
-  background-color: rgb(255, 222, 34);
-  display: flex;
+    display: flex;
   justify-content: right;
   align-items: center;
+  color:#545871;
 }
 
 .greet-header {
@@ -165,11 +177,8 @@ height: 80%;
 .dog-name {
   height: 50px;
   display: grid;
-
+  
   grid-template-rows: repeat(2, 1fr);
-
-  background-color: lightseagreen;
-
 }
 
 .camera {
@@ -226,6 +235,8 @@ option{
 .dog-name-lbl {
   display: flex;
   align-items: center;
+  color: #545871;
+
 }
 
 .dog-name-in {
@@ -236,7 +247,6 @@ option{
   height: 50px;
 
   display: grid;
-  background-color: lightseagreen;
 
   grid-template-rows: repeat(2,25px);
 
@@ -245,13 +255,14 @@ option{
 .age-lbl {
   display: flex;
   align-items: center;
+  color: #545871;
+
 }
 
 .breed {
   height: 50px;
 
   display: grid;
-  background-color: lightseagreen;
 
   grid-template-rows: repeat(2, 25px);
 
@@ -260,6 +271,8 @@ option{
 .breed-lbl {
   display: flex;
   align-items: center;
+  color: #545871;
+
 }
 
 
@@ -273,7 +286,6 @@ option{
 
   display: grid;
   grid-template-rows: repeat(2, 25px);
-  background-color: lightseagreen;
 }
 
 .email-in {
@@ -284,6 +296,8 @@ option{
 .email-lbl {
   display: flex;
   align-items: center;
+  color: #545871;
+
 }
 
 
@@ -292,12 +306,13 @@ option{
 
   display: grid;
   grid-template-rows: repeat(2, 25px);
-  background-color: lightseagreen;
 }
 
 .gender-lbl {
   display: flex;
   align-items: center;
+  color: #545871;
+
 }
 
 .gender-in {
@@ -349,7 +364,6 @@ option{
 
   display: grid;
   grid-template-rows: repeat(2, 25px);
-  background-color: lightseagreen;
 }
 
 .sp-ne-in {
@@ -363,6 +377,8 @@ option{
 .sp-ne-lbl {
   display: flex;
   align-items: center;
+  color: #545871;
+
 }
 
 
@@ -407,7 +423,6 @@ option{
 
   display: grid;
   grid-template-rows: repeat(2, 25px);
-  background-color: lightseagreen;
 }
 
 .dry-wet-in {
@@ -421,6 +436,8 @@ option{
 .dry-wet-lbl {
   display: flex;
   align-items: center;
+  color: #545871;
+
 }
 
 
@@ -464,16 +481,23 @@ option{
   height: 50px;
   display: grid;
   grid-template-rows: repeat(2, 25px);
-  background-color: lightseagreen;
   grid-column-start: 1;
   grid-column-end: -1;
+  border: 0;
+}
+
+
+.general-lbl {
+  display: flex;
+  align-items: center;
+  color: #545871;
+
 }
 
 .weight {
   height: 50px;
   display: grid;
   grid-template-rows: repeat(2, 25px);
-  background-color: lightseagreen;
   grid-column-start: 1;
   grid-column-end: -1;
 }
@@ -483,6 +507,8 @@ option{
 .weight-lbl {
   display: flex;
   align-items: center;
+  color: #545871;
+
 }
 
 .weight-in {
@@ -566,7 +592,6 @@ option{
 
 .form-footer {
   grid-area: form-footer;
-  background-color: lightblue;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
@@ -575,6 +600,7 @@ option{
 
 textarea{
   resize: none;
+  border:0;
 
 }
 .bck-btn {
@@ -592,6 +618,7 @@ textarea{
   grid-row: 2/3;
   grid-column: 5/6;
   background-color: #545871;
+  color: white;
   border-radius: 25px;
   height: 75%;
 
@@ -602,6 +629,7 @@ textarea{
 }
 
 @media only screen and (max-width: 1042px) {
+
 
   .grid-main {
     justify-self: center;
@@ -620,6 +648,7 @@ textarea{
     grid-area: form;
     background-color: #faeceb;
     height: 100%;
+    width: 100%;
     display: grid;
     grid-template-areas:
       ". form-head ."
@@ -632,7 +661,119 @@ textarea{
 
   .form-footer {
     grid-area: form-footer;
-    background-color: lightblue;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+    align-items: center;
+  }
+
+  .bck-btn {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: white;
+    border-radius: 25px;
+    border: solid black;
+    border-width: thin;
+    height: 50%;
+  }
+  
+  .next-btn {
+    grid-row: 1/2;
+    grid-column: 5/6;
+    background-color: #545871;
+    border-radius: 25px;
+    height: 50%;
+  
+  }
+
+  .nav-header-title {
+    display: none;
+  }
+
+
+  .nav-lbl {
+    display: none;
+  }
+
+  .greet-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+  }
+
+  .nav-list {
+    grid-area: nav-list;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+
+  }
+
+  .weight {
+    height: 150px;
+    display: grid;
+    grid-template-rows: 25px 125px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  
+
+  .weight-in {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    flex-flow: column;
+  }
+
+  .general-text {
+    height: 100px;
+    display: grid;
+    grid-template-rows: 25px 75px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 512px) {
+
+  .survey-nav{
+    display: none;
+  }
+  .grid-main {
+    justify-self: center;
+    display: grid;
+    grid-template-areas:
+      "form";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    /*background-color: yellow;*/
+  }
+
+  .survey-form {
+    grid-area: form;
+    background-color: #faeceb;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      "form-head"
+      "form-fields"
+      "form-footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    border-radius: 25px 25px  25px 25px;
+  }
+
+  .form-footer {
+    grid-area: form-footer;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
@@ -686,7 +827,6 @@ textarea{
     height: 150px;
     display: grid;
     grid-template-rows: 25px 125px;
-    background-color: lightseagreen;
     grid-column-start: 1;
     grid-column-end: -1;
   }
@@ -703,7 +843,7 @@ textarea{
     height: 100px;
     display: grid;
     grid-template-rows: 25px 75px;
-    background-color: lightseagreen;
+    
     grid-column-start: 1;
     grid-column-end: -1;
   }
