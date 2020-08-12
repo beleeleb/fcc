@@ -32,8 +32,8 @@ body {
     "nav form";
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
-  width: 80%;
-  height: 80%;
+  width: 85%;
+  height: 85%;
   align-items: center;
   /*background-color: yellow;*/
   border-radius: 25px;
@@ -50,18 +50,17 @@ body {
     ". nav-head ."
     ". nav-list .";
   grid-template-columns: 2fr 5fr 2fr;
-  grid-template-rows: 1fr 4fr 2fr;
+  grid-template-rows: 1fr 2fr 2fr;
   background-image: url(../../assets/pngwing.com.duo.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 50%;
+  background-size: 60%;
 }
 
 .nav-list {
 
   grid-area: nav-list;
-  background-color: pink;
-  display: grid;
+    display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: repeat(4, 1fr);
   align-items: center;
@@ -75,6 +74,9 @@ body {
   height: 40px;
 }
 
+.nav-header-title{
+  font-size: 1.2em;
+}
 /*
 .nav-lbls{
   display: grid;
@@ -98,7 +100,7 @@ height: 80%;
 }*/
 
 .nav-lbl{
-  color: #545871;
+  color: #9597a6;
 
 }
 .nav-radio {
@@ -126,10 +128,10 @@ height: 80%;
 
 .nav-header {
   grid-area: nav-head;
-  background-color: purple;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+display: grid;
+grid-template-columns: 1fr 3fr;
+align-items: center;
+justify-items: start;
   
 }
 
@@ -183,8 +185,6 @@ height: 80%;
 
 .camera {
   height: 50px;
-
-  background-color: lightsalmon;
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -202,6 +202,10 @@ height: 80%;
   align-items: center;
 }
 
+.camera-lbl{
+  color: #545871;
+
+}
 
 .camera-border img {
   width: 20px;
@@ -215,8 +219,12 @@ input {
   border: 0;
 }
 
-input::placeholder{
+*::placeholder{
   font-family: 'Mulish', sans-serif;
+  padding-left: 10px;  
+  display: flex;
+  align-self: center;
+  justify-self: center;
 }
 
 select  {
@@ -601,7 +609,8 @@ option{
 textarea{
   resize: none;
   border:0;
-
+  padding: 0;
+  display:inline-block; vertical-align:middle;
 }
 .bck-btn {
   grid-row: 2/3;
@@ -635,13 +644,26 @@ textarea{
     justify-self: center;
     display: grid;
     grid-template-areas:
-      "nav form";
-    grid-template-columns: 1fr 6fr;
+      "form";
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     width: 90%;
     height: 90%;
     align-items: center;
     /*background-color: yellow;*/
+  }
+
+
+  .nav-header-title {
+    display: none;
+  }
+
+  .nav-lbl {
+    display: none;
+  }
+
+  .survey-nav{
+    display: none;
   }
 
   .survey-form {
@@ -656,7 +678,8 @@ textarea{
       ". form-footer .";
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 1fr 7fr 1fr;
-    border-radius: 0 25px 25px 0;
+      border-radius: 25px 25px  25px 25px;
+
   }
 
   .form-footer {
@@ -701,15 +724,7 @@ textarea{
     margin: 0px;
   }
 
-  .nav-list {
-    grid-area: nav-list;
-    background-color: pink;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    align-items: center;
 
-  }
 
   .weight {
     height: 150px;
