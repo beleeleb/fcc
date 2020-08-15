@@ -1,17 +1,27 @@
 /* Style the header */
+
+* {
+  background-color: #b29983;
+}
 .grid-container{
-  display: grid;
-  grid-template-rows: 1fr 10fr;
+  display: grid;  
+  grid-template-rows: 136px 1fr 1fr; 
   height: 100vh;
 }
 
 .header {
-  background: blue;
+  background: lightblue;
   position: fixed;
   top: 0;
-width: 100%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
+ }
+
+ .potato-img{
+  top: -20px; 
+  width: 100%;
+  height: auto;
  }
