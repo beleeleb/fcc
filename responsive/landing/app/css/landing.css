@@ -81,3 +81,35 @@ table {
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
  }
+ .subscriptions-cards {
+   display: grid;
+   background-color: #f1f3f1;
+   width: 100%;
+   grid-template-columns: 2fr 1px 2fr 1px 2fr;
+   height: 2px;
+   justify-items: center;
+   align-items: center;
+
+
+ }
+
+ .card {
+   display: grid;
+   grid-template-rows: 1fr 3fr 1fr 1fr 3fr;
+   width: 100%;
+ }
+
+ .card-dividor {
+
+   height: 100%;
+   border: solid 1px black;
+ }
+
+ .subscriptions-title {}
+
+ img {
+
+   max-width: 100%;
+   height: auto;
+
+ }
