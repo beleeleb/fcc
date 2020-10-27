@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -52,16 +52,16 @@ table {
 .grid-container{
 
   display: grid; 
-  grid-template-rows: 136px 1fr 1fr; 
-  height: 100vh;
+  grid-template-rows: 136px 1fr 2fr; 
 }
 
 .header {
   background: lightblue;
   position: fixed;
-  top: 0;
-  width: 100%;
+top:0;
   display: grid;
+  width: 100vw;
+  max-width: 100%;
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
@@ -72,11 +72,8 @@ table {
  .header a{
    color: white;
  }
- .potato-img{
-  top: -20px; 
-  width: 100%;
-  height: auto;
- }
+
+
  h1, h2{
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
@@ -84,32 +81,23 @@ table {
  .subscriptions-cards {
    display: grid;
    background-color: #f1f3f1;
-   width: 100%;
    grid-template-columns: 2fr 1px 2fr 1px 2fr;
    height: 2px;
    justify-items: center;
    align-items: center;
-
-
  }
 
  .card {
    display: grid;
    grid-template-rows: 1fr 3fr 1fr 1fr 3fr;
-   width: 100%;
  }
 
  .card-dividor {
-
    height: 100%;
    border: solid 1px black;
  }
 
- .subscriptions-title {}
-
  img {
-
-   max-width: 100%;
+   max-width: 100vw;
    height: auto;
-
  }
