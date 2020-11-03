@@ -45,34 +45,52 @@ table {
 	border-spacing: 0;
 }
 
-* {
+.grid-container {
+  display: grid;
+  grid-template-rows: 136px 1fr 1fr 1fr 3fr;
+}
+
+.land-1 {
+  display: grid;
+  grid-template-rows: 0.1fr 0.1fr 1fr;
   background-color: #b29983;
-  
-}
-.grid-container{
+  justify-items: center;
 
-  display: grid; 
-  grid-template-rows: 136px 1fr 2fr; 
-}
+  }
 
+  h1 {
+    font-size: 2em;
+  }
+
+  .land-4 {
+    background-color: #f1f3f1;
+
+  }
+
+  .embeddedVideo {
+    width: 100%;
+  }
 .header {
   background: lightblue;
   position: fixed;
-top:0;
+  top:0;
   display: grid;
-  width: 100vw;
-  max-width: 100%;
+  width: 100%;
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
   color: white;
-
+  height: 136px;
  }
 
  .header a{
    color: white;
  }
 
+ .embeddedVideo {
+   width: 100%;
+   height: 100%;
+ }
 
  h1, h2{
   font-family: 'Source Sans Pro', sans-serif;
@@ -80,24 +98,18 @@ top:0;
  }
  .subscriptions-cards {
    display: grid;
-   background-color: #f1f3f1;
-   grid-template-columns: 2fr 1px 2fr 1px 2fr;
-   height: 2px;
+   grid-template-rows: 1fr 0.1fr 1fr 0.1fr 1fr;
    justify-items: center;
    align-items: center;
+   width: 100%;
  }
 
- .card {
-   display: grid;
-   grid-template-rows: 1fr 3fr 1fr 1fr 3fr;
- }
-
- .card-dividor {
-   height: 100%;
+ .card-divider {
+   width: 100%;
    border: solid 1px black;
  }
 
  img {
-   max-width: 100vw;
+   max-width:100%;
    height: auto;
  }
