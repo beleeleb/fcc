@@ -28,6 +28,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  font-family: 'Raleway',
+  sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -52,14 +54,30 @@ table {
 
 .land-1 {
   display: grid;
-  grid-template-rows: 0.1fr 0.1fr 1fr;
-  background-color: #b29983;
+  grid-template-rows: 1fr 3fr;
+  background: radial-gradient(circle, rgba(178, 153, 131, 1) 33%, rgba(163, 128, 98, 1) 100%);
   justify-items: center;
-
+  align-items: center;
+  color: white;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 1.25em;
+    font-weight: 500;
+    text-align: center;
+    padding: 3px;
+  }
+
+  h2 {
+    font-size: 0.85em;
+    font-weight: 200;
+    text-align: center;
+
+  }
+
+  .land-1 img {
+    max-width: 80%;
+    height: auto;
   }
 
   .land-4 {
@@ -92,24 +110,28 @@ table {
    height: 100%;
  }
 
- h1, h2{
-  font-family: 'Source Sans Pro', sans-serif;
-  color: white;
- }
+
  .subscriptions-cards {
    display: grid;
    grid-template-rows: 1fr 0.1fr 1fr 0.1fr 1fr;
    justify-items: center;
    align-items: center;
    width: 100%;
- }
+   }
+
+   .subscriptions-section>* {
+     color: #696969;
+   }
 
  .card-divider {
    width: 100%;
    border: solid 1px black;
  }
+ .card-btn {
+   border-radius: 25px;
+ }
 
- img {
-   max-width:100%;
+ .card img {
+   max-width: 70%;
    height: auto;
  }
