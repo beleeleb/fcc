@@ -63,7 +63,7 @@ table {
 
   h1 {
     font-size: 1.25em;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     padding: 3px;
   }
@@ -97,6 +97,7 @@ table {
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
+  justify-content: center;
   color: white;
   height: 136px;
  }
@@ -123,6 +124,33 @@ table {
      color: #696969;
    }
 
+   .subscriptions-section h1 {
+     font-size: 1.25em;
+     font-weight: 500;
+     text-align: center;
+     padding: 3px;
+   }
+
+   .card {
+     display: grid;
+     grid-template-rows: 0.25fr 0.5fr 0.5fr 0.5fr;
+     justify-items: center;
+     align-items: center;
+     font-weight: 300;
+   }
+
+
+
+   .card h2 {
+     font-size: 1em;
+     font-weight: 600;
+     text-align: center;
+     padding: 3px;
+   }
+
+   .card-list {
+     list-style-type: disc;
+   }
  .card-divider {
    width: 100%;
    border: solid 1px black;
@@ -130,8 +158,26 @@ table {
  .card-btn {
    border-radius: 25px;
  }
+.card-details {
+  font-size: 0.5em;
+  font-weight: 400;
+  padding: 5px;
+}
 
+.light-h2 {
+  font-weight: 300;
+}
  .card img {
    max-width: 70%;
    height: auto;
  }
+.card-btn {
+  font-family: 'Raleway',
+    sans-serif;
+  width: 100%;
+  border-color: #97D38F;
+  border-style: solid;
+  border-width: 1px;
+  height: 30px;
+  color: #97D38F;
+}
