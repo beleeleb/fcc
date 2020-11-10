@@ -31,6 +31,7 @@ body {
   font-family: 'Raleway',
   sans-serif;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -80,35 +81,57 @@ table {
     height: auto;
   }
 
+  .land-2{
+    display: grid;
+    background-color: green;
+  }
+
   .land-4 {
     background-color: #f1f3f1;
-
   }
 
-  .embeddedVideo {
-    width: 100%;
-  }
+
 .header {
   background: lightblue;
   position: fixed;
   top:0;
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr;
+  grid-template-columns: 0.85fr 2fr 0.85fr;
   align-items: center;
   justify-items: center;
   justify-content: center;
   color: white;
   height: 136px;
- }
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
 
+
+ }
+.header img{
+  filter: invert();
+width: 90%;  
+height: auto;
+}
  .header a{
    color: white;
+   text-decoration:none;
+ }
+
+ .buy-it-now{
+border-color: white;
+border-width: 1px;
+border-style: solid;
+border-radius: 25px;
+border-spacing: 5px;
+padding: 5px;
  }
 
  .embeddedVideo {
    width: 100%;
-   height: 100%;
+   height: auto;
+   
  }
 
 
@@ -152,8 +175,8 @@ table {
      list-style-type: disc;
    }
  .card-divider {
-   width: 100%;
-   border: solid 1px black;
+   width: 90%;
+   border: solid 1px rgba(0,0,0,0.2);
  }
  .card-btn {
    border-radius: 25px;
@@ -180,4 +203,6 @@ table {
   border-width: 1px;
   height: 30px;
   color: #97D38F;
+  background-color: #f1f3f1;
+
 }
