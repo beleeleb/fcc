@@ -188,7 +188,7 @@
     }
 
 
-    .gallery {
+    .nav-link {
         
         display: flex;
         line-height: 1.6;
@@ -204,9 +204,12 @@
             padding: 48px 12px 48px 12px;
         }
 
-        .content-box > h1{
+        .content-box > header{
             margin-top: 0px;
             margin-bottom: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+
         }
 
         .content-box > p{
@@ -220,11 +223,12 @@
         }
 
    
-        .part {
+        .main-section {
          padding-top: 112px;
+         
                 }
       
-               pre  { background-color: #f6f6f6;
+               code  { background-color: #f6f6f6;
                     margin-left: 5px;
                     padding: 10px;
                    font-family: monospace;
