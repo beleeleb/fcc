@@ -151,17 +151,20 @@
     all: initial;
     all: unset;
 }
+
 * {
     font-family: -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    sans-serif;
+        BlinkMacSystemFont,
+        'Segoe UI',
+        sans-serif;
 }
+
+
 .grid-container {
     top: 112px;
     position: relative;
     display: grid;
-    grid-template-rows: repeat(6, 350px);
+    grid-template-rows: repeat(6, 200px);
 }
 
 .menu {
@@ -180,56 +183,85 @@
 
 .bottom-menu {
     background-color: red;
-   display: flex;
+    display: flex;
     overflow: scroll;
     gap: 35px;
     align-items: stretch;
     padding-left: 5px;
+}
+
+
+.nav-link {
+
+    display: flex;
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 14px;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid black;
+}
+
+
+.main-section {
+    padding: 112px 12px 48px 12px;
+
+}
+
+.main-section>header {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.main-section>p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+code {
+    background-color: #f6f6f6;
+    margin-left: 5px;
+    padding: 10px;
+    font-family: monospace;
+    width: 90%
+}
+
+@media (min-width: 1200px) {
+  
+    .reset-all{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        overflow:scroll;
+
+
     }
 
-
-    .nav-link {
+    .menu{
+        height: 100%;
+        grid-template-rows: 1fr 8fr;
+        position: relative;
+        overflow:scroll;
         
-        display: flex;
-        line-height: 1.6;
-        font-weight: 500;
-        font-size: 14px;
-        align-items: center;
-        text-decoration: none;
-        color: black;
-  
-        }
+    }
+    
+    .bottom-menu{
+        flex-direction: column;
+    }
 
-        .content-box{
-            padding: 48px 12px 48px 12px;
-        }
+    main{
+        position: relative;
+        overflow-y: scroll;
 
-        .content-box > header{
-            margin-top: 0px;
-            margin-bottom: 10px;
-            font-size: 1.5em;
-            font-weight: bold;
 
-        }
-
-        .content-box > p{
-            margin-top:0px;
-            margin-bottom: 10px;
-        }
-
-        a:hover {
-            border-top: 5px solid transparent;
-            border-bottom: 5px solid black;
-        }
-
-   
-        .main-section {
-         padding-top: 112px;
-         
-                }
-      
-               code  { background-color: #f6f6f6;
-                    margin-left: 5px;
-                    padding: 10px;
-                   font-family: monospace;
-                width: 90% }
+    }
+  }
