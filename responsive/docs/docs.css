@@ -164,7 +164,7 @@
     top: 112px;
     position: relative;
     display: grid;
-    grid-template-rows: repeat(6, 200px);
+    grid-template-rows: repeat(6, 300x);
 }
 
 .menu {
@@ -188,6 +188,8 @@
     gap: 35px;
     align-items: stretch;
     padding-left: 5px;
+    box-shadow: 2px 0px 1px -2px 	rgb(211,211,211);
+
 }
 
 
@@ -208,9 +210,9 @@ a:hover {
     border-bottom: 5px solid black;
 }
 
-
 .main-section {
-    padding: 112px 12px 48px 12px;
+    margin-top: -112px;
+    padding: 160px 12px 24px 12px;
 
 }
 
