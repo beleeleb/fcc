@@ -53,13 +53,16 @@
                 with images of everything our planet has to offer,
                 from stunning seascapes, starry skies, and everything in between.</p>
 
-            <pre><code>
-// server
-import fetch from 'node-fetch';
-global.fetch = fetch;
+            <pre><code>var input = document.querySelector('input[type="file"]')
 
-// browser
-import 'whatwg-fetch';
+var data = new FormData()
+data.append('file', input.files[0])
+data.append('user', 'hubot')
+
+fetch('/avatars', {
+  method: 'POST',
+  body: data
+})
 </code>
 </pre>
 
@@ -78,7 +81,14 @@ import 'whatwg-fetch';
                 with images of everything our planet has to offer,
                 from stunning seascapes, starry skies, and everything in between.</p>
 
-            <code>#include "stdio.c"</code>
+                        <pre><code>var form = document.querySelector('form')
+
+fetch('/users', {
+  method: 'POST',
+  body: new FormData(form)
+})
+</code>
+</pre>
             <p>Let’s celebrate the magic of Mother Earth —
                 with images of everything our planet has to offer,
                 from stunning seascapes, starry skies, and everything in between.</p>
@@ -104,7 +114,14 @@ import 'whatwg-fetch';
                 with images of everything our planet has to offer,
                 from stunning seascapes, starry skies, and everything in between.</p>
 
-            <code>#include "stdio.c"</code>
+                        <pre><code>// server
+import fetch from 'node-fetch';
+global.fetch = fetch;
+
+// browser
+import 'whatwg-fetch';
+</code>
+</pre>
             <p>Let’s celebrate the magic of Mother Earth —
                 with images of everything our planet has to offer,
                 from stunning seascapes, starry skies, and everything in between.</p>
@@ -117,11 +134,24 @@ import 'whatwg-fetch';
                 with images of everything our planet has to offer,
                 from stunning seascapes, starry skies, and everything in between.</p>
 
-            <code>#include "stdio.c"</code>
+                        <pre><code>fetch('/users.json')
+  .then(function(response) {
+    return response.json()
+  }).then(function(json) {
+    console.log('parsed json', json)
+  }).catch(function(ex) {
+    console.log('parsing failed', ex)
+  })    
+</code>
+</pre>
             <p>Let’s celebrate the magic of Mother Earth —
                 with images of everything our planet has to offer,
                 from stunning seascapes, starry skies, and everything in between.</p>
-            <code>#include "stdio.c"</code>
+                       <pre><code>fetch('https://example.com:1234/users', {
+  credentials: 'include'
+})
+</code>
+</pre>
 
         </section>
     </main>

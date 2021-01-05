@@ -230,33 +230,39 @@ a:hover {
     margin-bottom: 10px;
 }
 
-
-code {
+pre {
     background-color: #f6f6f6;
-    margin-left: 5px;
-    padding: 10px;
-    font-family: monospace;
-    width: 90%
+    display: flex;
+    align-items: center;
+    width: 100%;
+    white-space: pre-wrap;
+}
+
+    code {
+   font-family: monospace;
+   padding: 20px;
+   width: 100%;
 }
 
 @media (min-width: 1200px) {
   
     .reset-all{
         display: grid;
-        grid-template-columns: 20vw 3fr;
+        grid-template-columns: 15vw 3fr;
 
 
     }
 
     .menu{
         height: 100%;
-        width: 20vw;
+        width: 15vw;
         grid-template-rows: 1fr 8fr;
         position: fixed; 
     }
     
     .bottom-menu{
         flex-direction: column;
+        padding-right: 5px;
     }
 
     main{
