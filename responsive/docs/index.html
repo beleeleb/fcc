@@ -10,7 +10,7 @@
 
 <body class="reset-all">
     <nav class="menu" id="navbar">
-        <header class="upper-menu">upper menu</header>
+        <header class="upper-menu"><div class="search-bar"><div></div><input class="search-text" placeholder="Search docs"/></div></header>
         <div class="bottom-menu">
             <a id="first-link" class="nav-link" href="#intro">Intro</a>
             <a class="nav-link" href="#vars">Vars</a>
@@ -81,7 +81,7 @@ fetch('/avatars', {
                 with images of everything our planet has to offer,
                 from stunning seascapes, starry skies, and everything in between.</p>
 
-                        <pre><code>var form = document.querySelector('form')
+            <pre><code>var form = document.querySelector('form')
 
 fetch('/users', {
   method: 'POST',
@@ -114,7 +114,7 @@ fetch('/users', {
                 with images of everything our planet has to offer,
                 from stunning seascapes, starry skies, and everything in between.</p>
 
-                        <pre><code>// server
+            <pre><code>// server
 import fetch from 'node-fetch';
 global.fetch = fetch;
 
@@ -134,7 +134,7 @@ import 'whatwg-fetch';
                 with images of everything our planet has to offer,
                 from stunning seascapes, starry skies, and everything in between.</p>
 
-                        <pre><code>fetch('/users.json')
+            <pre><code>fetch('/users.json')
   .then(function(response) {
     return response.json()
   }).then(function(json) {
@@ -147,13 +147,15 @@ import 'whatwg-fetch';
             <p>Let’s celebrate the magic of Mother Earth —
                 with images of everything our planet has to offer,
                 from stunning seascapes, starry skies, and everything in between.</p>
-                       <pre><code>fetch('https://example.com:1234/users', {
+            <pre><code>fetch('https://example.com:1234/users', {
   credentials: 'include'
 })
 </code>
 </pre>
 
         </section>
+
+
     </main>
 </body>
 <script src="docs.js"></script>

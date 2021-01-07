@@ -168,7 +168,6 @@
 }
 
 .menu {
-    background-color: blue;
     display: grid;
     grid-template-rows: 1fr 1fr;
     position: fixed;
@@ -179,7 +178,33 @@
 
 .upper-menu {
     background-color: white;
-}
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 1fr;
+    }
+
+    .search-bar {
+        grid-column-start: 2;
+        border-radius: 25px;
+        background: #eee;
+        align-self: flex-end;
+        justify-self: center;
+        height: 80%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        border: 1px solid rgb(200, 200, 200);
+    }
+
+    .search-text {
+        align-self: center;
+        justify-self: left;
+        color: rgb(118, 118, 118);
+        height: 90%;
+        background-color: #eee;
+        outline: none;
+        border: none;
+        font-size: 1.05em;
+    }
 
 .bottom-menu {
     background-color: white;
@@ -198,7 +223,7 @@
     display: flex;
     line-height: 1.6;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.05em;
     align-items: center;
     text-decoration: none;
     color: #767676;
@@ -248,21 +273,51 @@ pre {
   
     .reset-all{
         display: grid;
-        grid-template-columns: 15vw 3fr;
+        grid-template-columns: 20vw 3fr;
 
 
     }
 
     .menu{
         height: 100%;
-        width: 15vw;
-        grid-template-rows: 1fr 8fr;
+        width: 20vw;
+        grid-template-rows: 0.5fr 0.5fr 5fr;
         position: fixed; 
     }
-    
+    .upper-menu {
+        grid-row-start: 2;
+        grid-template-columns: 0.25fr 3fr 0.25fr;
+
+    }
+
+    .search-bar {
+        grid-column-start: 2;
+        border-radius: 25px;
+        background: #eee;
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        border: 1px solid rgb(200, 200, 200);
+    }
+
+.search-text {
+    align-self: center;
+    justify-self: left;
+    color: rgb(118, 118, 118);
+    background-color: #eee;
+    outline: none;
+    border: none;
+    height: 80%;
+    width: 80%;
+    font-size: 1.05em;
+}
     .bottom-menu{
         flex-direction: column;
         padding-right: 5px;
+        grid-row-start: 3;
+
     }
 
     main{
