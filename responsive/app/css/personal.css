@@ -166,13 +166,32 @@
     grid-template-columns: 1fr 3fr 1fr;
     justify-items: center;
     align-items: center;
-    position: fixed;
+        position: fixed;
     height: 50px;
     width: 100%;
 }
 
 .side-menu-icon {
     grid-column-start: 3;
+}
+
+.side-menu-style {
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.links {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: auto;
 }
 
 .welcome {
