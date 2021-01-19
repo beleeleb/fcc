@@ -152,7 +152,7 @@
     all: unset;
 }
 
-.reset-all {
+.main-container-style {
     display: grid;
     grid-template-rows: 150px 1fr 1fr 1fr 1fr;
 }
@@ -173,6 +173,24 @@
 
 .side-menu-icon {
     grid-column-start: 3;
+}
+
+.projects {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+.project-tile {
+    display: flex;
+    justify-content: center;
+}
+
+.tile-img {
+
+    width: 90%;
+    height: 90%;
 }
 
 .side-menu-style {
