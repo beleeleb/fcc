@@ -1,6 +1,6 @@
 let iconLink = document.getElementById("side-menu-icon-id");
 let myFunction = function(){
-    let sideMenu = document.getElementById("side-menu");
+    let sideMenu = document.getElementById("navbar");
 
     if( sideMenu.style.visibility=="hidden")
     {
