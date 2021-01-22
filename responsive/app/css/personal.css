@@ -151,7 +151,9 @@
     all: initial;
     all: unset;
 }
-
+.about-style {
+    text-align: center;
+}
 .welcome-style {
     height: 100vh;
     display: grid;
@@ -187,13 +189,20 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    border: 1px solid blue;
+    border: 1px solid #CFD4DA;
     grid-template-rows: 5fr 1fr;
+    margin: 20px;
 }
-.img-title {
-    background-color: green;
-    width: 100%;
+.project-tile a {
     height: 100%;
+    width: 100%;
+    }
+
+    .img-title {
+        background-color: #DEE2E6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 .tile-img {
   width: 100%;
@@ -241,4 +250,8 @@
 
 .info h2 {
     font-size: 1em;
+}
+
+* {
+    color: #21252A
 }
