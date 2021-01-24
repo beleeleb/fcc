@@ -1,5 +1,5 @@
 let iconLink = document.getElementById("side-menu-icon-id");
-let myFunction = function(){
+let myFunction = function(event){
     let sideMenu = document.getElementById("navbar");
 
     if( sideMenu.style.visibility=="hidden")
@@ -12,5 +12,6 @@ let myFunction = function(){
 
     }
 }
-iconLink.addEventListener("click", myFunction);
+iconLink.addEventListener("click", myFunction, false);
+
 
