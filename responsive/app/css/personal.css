@@ -290,5 +290,36 @@
         width: 100%;
 
     }
-    
+
+    .projects {
+        align-items: center;
+        justify-items: center;
+    }
+
+    .project-tile {
+        width: 80%;
+        height: 500px;
+        border-radius: 30px;
+        background-color: pink;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr;
+
+
+
+    }
+
+    .img-link {
+        display: grid;
+        justify-items: center;
+        background-color: black;
+        transform: rotate(-10deg) scale(0.6);
+        grid-template-rows: 15px 1fr;
+    }
+
+    .tile-img {
+        grid-row-start: 2;
+        width: calc(100vh - 5px);
+        height: auto;
+    }
+
 }
