@@ -312,14 +312,27 @@
         display: grid;
         justify-items: center;
         background-color: black;
-        transform: rotate(-10deg) scale(0.6);
-        grid-template-rows: 15px 1fr;
+        transform: rotate(-10deg) scale(0.7);
+        grid-template-rows: 30px 1fr;
     }
 
     .tile-img {
         grid-row-start: 2;
-        width: calc(100vh - 5px);
+        width: calc(100% - 60px);
         height: auto;
+    }
+
+    .img-title {
+        border-radius: 30px;
+        background-color: transparent;
+    }
+
+    .img-title h1 {
+        font-size: 1.5em;
+    }
+
+    .img-title h2 {
+        font-size: 1em;
     }
 
 }
