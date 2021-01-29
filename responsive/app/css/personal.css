@@ -325,14 +325,39 @@
     .img-title {
         border-radius: 30px;
         background-color: transparent;
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        text-decoration: none;
+
     }
 
     .img-title h1 {
         font-size: 1.5em;
+        width: 100%;
+        align-self: end;
+
     }
 
     .img-title h2 {
         font-size: 1em;
+        width: 100%;
+        align-self: start;
+
     }
 
+    .projects-title {
+        display: grid;
+        justify-items: center;
+    }
+
+    .projects-title h1 {
+        font-size: 2em;
+
+    }
+
+
+    .projects-title h2 {
+        font-size: 1em;
+    }
 }
