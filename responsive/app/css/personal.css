@@ -383,6 +383,10 @@
     grid-template-rows: 1fr;
 }
 
+.links a{
+    text-decoration: none;
+}
+
 .side-menu-icon {
     display: none;
 }
