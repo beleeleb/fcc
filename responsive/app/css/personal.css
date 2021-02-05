@@ -385,7 +385,13 @@
 
 .links a{
     text-decoration: none;
-}
+    z-index: 100;
+    }
+
+    .links a:hover {
+
+        border-bottom: 2px solid green;
+ }
 
 .side-menu-icon {
     display: none;
