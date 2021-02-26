@@ -305,15 +305,12 @@
     }
 
     .project-tile {
-        width: 80%;
+        width: 70%;
         height: 500px;
         border-radius: 30px;
         background-color: pink;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-
-
-
     }
 
     .img-link {
@@ -322,6 +319,7 @@
         background-color: black;
         transform: rotate(-10deg) scale(0.7);
         grid-template-rows: 30px 1fr;
+        width: 400px;
     }
 
     .tile-img {
@@ -341,15 +339,15 @@
     }
 
     .img-title h1 {
-        font-size: 1.5em;
-        width: 100%;
+        font-size: 1.75em;
+        width: 90%;
         align-self: end;
 
     }
 
     .img-title h2 {
         font-size: 1em;
-        width: 100%;
+        width: 70%;
         align-self: start;
 
     }
