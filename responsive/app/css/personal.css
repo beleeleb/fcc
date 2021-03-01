@@ -151,6 +151,10 @@
     all: initial;
     all: unset;
 }
+* {
+    font-family: 'Rubik'
+
+}
 .about-style {
     text-align: center;
 }
@@ -191,6 +195,7 @@
     align-items: center;
     border: 1px solid #CFD4DA;
     margin: 20px;
+    grid-template-rows: 1fr 60px;
 }
 
 .project-tile a {
@@ -241,7 +246,8 @@
 
 .info {
     text-align: center;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Rubik',
+    cursive;
     align-self: end;
 }
 
