@@ -163,6 +163,10 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
+#footer {
+    display: flex;
+    justify-content: center;
+}
 
 .main-img {
     height: auto;
@@ -293,7 +297,6 @@
     .info{
         width: 100%;
         height: 100%;
-       
 
     }
 
@@ -400,5 +403,7 @@
 .side-menu-icon {
     display: none;
 }
+
+
 
 }
