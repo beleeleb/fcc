@@ -152,7 +152,7 @@
     all: unset;
 }
 * {
-    font-family: 'Rubik'
+    font-family: 'Raleway'
 
 }
 .about-style {
@@ -250,25 +250,42 @@
 
 .info {
     text-align: center;
-    font-family: 'Rubik',
-    cursive;
     align-self: end;
 }
 
 .info h1 {
     font-size: 1.5em;
+    font-weight: 900;
+    margin:0;
+    padding:0;
 }
 
 .info h2 {
     font-size: 1em;
-}
+    margin:0;
+    padding:0;
+
+    }
+
+    .info h3 {
+        font-size: 0.5em;
+        margin: 0;
+        padding: 0;
+
+    }
 
 .img-title h1 {
     font-size: 1em;
+    margin:0;
+    padding:0;
+
 }
 
 .img-title h2 {
     font-size: 0.5em;
+    margin:0;
+    padding:0;
+
 }
 * {
     color: #21252A
@@ -295,8 +312,12 @@
     }
 
     .info{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1.5fr 0.5fr 1fr;
         width: 100%;
         height: 100%;
+        justify-items: left;
 
     }
 
@@ -337,6 +358,27 @@
         height: auto;
     }
 
+    .info h1 {
+        font-size: 4em;
+        grid-column-start: 2;
+        align-self: end;
+    }
+
+    .info h2 {
+        font-size: 2em;
+        font-weight: 500;
+        grid-column-start: 2;
+
+    }
+
+    .info h3 {
+        font-size: 1.1em;
+        font-weight: 100;
+        grid-column-start: 2;
+        text-align: left;
+
+    }
+
     .img-title {
         border-radius: 30px;
         background-color: transparent;
@@ -367,13 +409,15 @@
     }
 
     .projects-title h1 {
-        font-size: 2em;
+        font-size: 2.25em;
+        font-weight: 700;
 
     }
 
 
     .projects-title h2 {
-        font-size: 1em;
+        font-weight: 400;
+        font-size: 1.5em;
     }
 .navbar-style {
     visibility: visible;
