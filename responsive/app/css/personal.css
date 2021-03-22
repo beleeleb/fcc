@@ -346,7 +346,7 @@
     .img-link {
         display: grid;
         justify-items: center;
-        background-color: black;
+        background-color: white;
         transform: rotate(-10deg) scale(0.7);
         grid-template-rows: 30px 1fr;
         width: 400px;
@@ -383,23 +383,25 @@
         border-radius: 30px;
         background-color: transparent;
         display:grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         align-items: center;
         text-decoration: none;
 
     }
 
     .img-title h1 {
-        font-size: 1.75em;
+        font-size: 2em;
         width: 90%;
         align-self: end;
 
     }
 
     .img-title h2 {
-        font-size: 1em;
-        width: 70%;
-        align-self: start;
+        font-size: 1.25em;
+        width: 90%;
+        align-self: center;
+        font-weight: 500
+
 
     }
 
