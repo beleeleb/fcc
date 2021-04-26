@@ -3,30 +3,23 @@ import axios from "axios";
 function Quote() {
   const [token, setToken] = useState("");
 
-  const [quote, setQuote] = useState("");
-  useEffect(() => {
-    // You need to restrict it at some point
-    // This is just dummy code and should be replaced by actual
-    console.log(token);
+  const [quote, setQuote] = useState({text:"", author:""});
+useEffect(()=>{
+    const response =  axios.get(
+      "https://type.fit/api/quotes"
+    ).then(
+      function (response) {
+        // handle success
+        console.log(response);
+        const quoteRes = response.data[Math.floor(Math.random() * response.data.length)];
+        setQuote({text:quoteRes.text, author:quoteRes.author});
+      }
+    )
 
-    getToken();
-  }, []);
+    },[]);
+  
 
-  const getToken = async () => {
-    const headers = {
-      Authorization: "Token " + token // using Cognito authorizer
-    };
-
-    console.log(headers);
-    const response = await axios.get(
-      "https://api.paperquotes.com/apiv1/quotes/?tags=ocean&random=random&order=?",
-      { headers }
-    );
-    setQuote(response.data.results[1].quote);
-    // const data = await response.json();
-  };
-
-  return <>{quote}</>;
+  return <>quote: {quote.text} author:{quote.author}</>;
 }
 
 export default Quote;
