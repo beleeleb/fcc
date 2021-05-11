@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+
+import styled from 'styled-components'
 function Quote() {
   const [token, setToken] = useState("");
 
@@ -19,7 +21,14 @@ useEffect(()=>{
     },[]);
   
 
-  return <>quote: {quote.text} author:{quote.author}</>;
+  return <Container>{quote.text} author:{quote.author}</Container>;
 }
+
+const Container = styled.div`
+background-color:blue;
+width:500px;
+font-size: 40px;
+font-family: "Raleway";
+`
 
 export default Quote;
