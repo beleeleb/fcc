@@ -1,34 +1,37 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import styled from 'styled-components'
-function Quote() {
+import styled from "styled-components";
+function Quote({ setBgColor }) {
   const [token, setToken] = useState("");
+  const [quote, setQuote] = useState({ text: "", author: "" });
+  useEffect(() => {
+    setBgColor("#" + Math.floor(Math.random() * 0xffffff).toString(16));
 
-  const [quote, setQuote] = useState({text:"", author:""});
-useEffect(()=>{
-    const response =  axios.get(
-      "https://type.fit/api/quotes"
-    ).then(
-      function (response) {
+    const response = axios
+      .get("https://type.fit/api/quotes")
+      .then(function(response) {
         // handle success
         console.log(response);
-        const quoteRes = response.data[Math.floor(Math.random() * response.data.length)];
-        setQuote({text:quoteRes.text, author:quoteRes.author});
-      }
-    )
 
-    },[]);
-  
+        const quoteRes =
+          response.data[Math.floor(Math.random() * response.data.length)];
+        setQuote({ text: quoteRes.text, author: quoteRes.author });
+      });
+  }, []);
 
-  return <Container>{quote.text} author:{quote.author}</Container>;
+  return (
+    <Container>
+      {quote.text} author:{quote.author}
+    </Container>
+  );
 }
 
 const Container = styled.div`
-background-color:blue;
-width:500px;
-font-size: 40px;
-font-family: "Raleway";
-`
+  background-color: blue;
+  width: 500px;
+  font-size: 40px;
+  font-family: "Raleway";
+`;
 
 export default Quote;
