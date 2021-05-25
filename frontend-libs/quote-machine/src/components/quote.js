@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 import styled from "styled-components";
-function Quote({ setBgColor }) {
+function Quote({ setBgColor, bgColor }) {
   const [token, setToken] = useState("");
   const [quote, setQuote] = useState({ text: "", author: "" });
   useEffect(() => {
@@ -21,17 +21,59 @@ function Quote({ setBgColor }) {
   }, []);
 
   return (
-    <Container>
+    <Container bgColor={bgColor} id="quote-box">
       {quote.text} author:{quote.author}
+      <BtnsContainer>
+        <Link bgColor={bgColor} id="tweet-quote" />
+        <Link bgColor={bgColor} />
+        <Btn
+          bgColor={bgColor}
+          onClick={() => window.location.reload()}
+          id="new-quote"
+        >
+          New Quote
+        </Btn>
+      </BtnsContainer>
     </Container>
   );
 }
 
 const Container = styled.div`
-  background-color: blue;
+  background-color: white;
   width: 500px;
   font-size: 40px;
   font-family: "Raleway";
+  color: ${props => props.bgColor};
+  transition: color 2s;
+
+  padding: 20px 20px 20px 20px;
 `;
 
+const BtnsContainer = styled.div`
+  padding-top: 10px;
+  display: flex;
+  gap: 5px;
+`;
+
+const Link = styled.a`
+  width: 40px;
+  height: 40px;
+  background-color: ${props => props.bgColor};
+  transition: background-color 2s;
+
+  border: 0;
+  outline: none;
+  color: white;
+`;
+
+const Btn = styled.button`
+  width: 100px;
+  height: 40px;
+  background-color: ${props => props.bgColor};
+  transition: background-color 2s;
+
+  border: 0;
+  outline: none;
+  color: white;
+`;
 export default Quote;
