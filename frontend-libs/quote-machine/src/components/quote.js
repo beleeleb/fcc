@@ -6,7 +6,13 @@ function Quote({ setBgColor, bgColor }) {
   const [token, setToken] = useState("");
   const [quote, setQuote] = useState({ text: "", author: "" });
   useEffect(() => {
-    setBgColor("#" + Math.floor(Math.random() * 0xffffff).toString(16));
+    const num = Math.random() * 200;
+    console.log("before floor" + num);
+    console.log("after floor" + Math.floor(num));
+    console.log("after tostring" + Math.floor(num).toString(16));
+    console.log("after padding" + Math.floor(num).toString(16).padEnd(6,"0"));
+//TODO: make decimal to rgb 
+    setBgColor("#" + Math.floor(num).toString(16).padEnd(6,"0"));
 
     const response = axios
       .get("https://type.fit/api/quotes")
