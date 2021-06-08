@@ -28,7 +28,8 @@ function Quote({ setBgColor, bgColor }) {
 
   return (
     <Container bgColor={bgColor} id="quote-box">
-      {quote.text} author:{quote.author}
+      <QuoteText>{quote.text}</QuoteText>
+      <QuoteAuthor>- {quote.author}</QuoteAuthor>
       <BtnsContainer>
         <Link bgColor={bgColor} id="tweet-quote" />
         <Link bgColor={bgColor} />
@@ -47,19 +48,31 @@ function Quote({ setBgColor, bgColor }) {
 const Container = styled.div`
   background-color: white;
   width: 500px;
-  font-size: 40px;
   font-family: "Raleway";
   color: ${props => props.bgColor};
   transition: color 2s;
 
   padding: 20px 20px 20px 20px;
+  display: grid;
+  grid-template-rows: 1fr 50px;
 `;
+
+const QuoteText = styled.div`
+font-size: 32px;
+text-align: center;
+`
+
+const QuoteAuthor = styled.div`
+font-size: 20px;
+justify-self: end;
+align-self: center;
+`
 
 const BtnsContainer = styled.div`
   padding-top: 10px;
-  display: flex;
-  gap: 5px;
-`;
+  display: grid;
+  grid-template-columns: 45px 45px 1fr;
+  `;
 
 const Link = styled.a`
   width: 40px;
@@ -81,5 +94,6 @@ const Btn = styled.button`
   border: 0;
   outline: none;
   color: white;
+  justify-self: end;
 `;
 export default Quote;
