@@ -40,10 +40,45 @@ function Quote({ setBgColor, bgColor }) {
         >
           New Quote
         </Btn>
+
+
       </BtnsContainer>
+      <Tabs>
+  <Tab><Span>rrrr</Span></Tab>
+</Tabs>
     </Container>
+    
   );
 }
+
+const Tabs = styled.ul`
+    display: flex;
+    width: 100%;
+    margin-top: 2em;
+    
+`;
+
+const Tab = styled.li`
+    display: flex;
+    font-family: "Raleway";
+    font-size: 25px;
+    border-bottom: 3px solid transparent;
+    background-image: linear-gradient(rgba(0, 145, 148, 1), rgba(72, 71, 112, 1)), rgba(0,255,0,1))
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px 	rgba(248, 248, 255,1) inset;
+    cursor: pointer;
+    outline: none;
+`;
+
+const Span = styled.span`
+    font-weight: 800;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-image-source: repeating-linear-gradient(45deg, transparent, #4d9f0c 20px);
+    background-image: rgba(0,255,0,1);
+`;
+
 
 const Container = styled.div`
   background-color: white;

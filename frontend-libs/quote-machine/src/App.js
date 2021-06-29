@@ -7,9 +7,13 @@ function App() {
   return (
     <Container bgColor={bgColor}>
       <Quote setBgColor={setBgColor} bgColor={bgColor} />
+
+
     </Container>
   );
 }
+
+
 
 const Container = styled.div`
   background-color: ${props => props.bgColor};
