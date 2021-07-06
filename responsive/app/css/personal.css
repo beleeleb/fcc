@@ -186,8 +186,6 @@
     font-weight: 700;
 
 }
-
-
 .projects-title h2 {
     font-weight: 400;
     font-size: 1em;
@@ -227,9 +225,9 @@
     grid-template-rows: 1fr 60px;
 }
 
-.project-tile a {
-    height: 100%;
-    width: 100%;
+.project-tile .img-link {
+    display: flex;
+    padding: 15px 15px 60px 15px;
     }
 
     .img-title {
@@ -376,15 +374,13 @@
         display: grid;
         justify-items: center;
         background-color: white;
-        transform: rotate(-10deg) scale(0.7);
+         transform: rotate(-10deg) scale(0.7);
         grid-template-rows: 30px 1fr;
         width: 400px;
-    }
+}
 
     .tile-img {
         grid-row-start: 2;
-        width: calc(100% - 60px);
-        height: auto;
     }
 
     .info h1 {
