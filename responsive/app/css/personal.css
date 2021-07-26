@@ -194,6 +194,7 @@
 .main-img {
     height: auto;
     width: 100%;
+    
 }
 .topbar-style {
     display: grid;
@@ -329,6 +330,8 @@
     .main-img {
         height: auto;
         width: 100%;
+        max-width: 600px;
+        padding-top: 100px;
     }
 
     .info-and-img{
