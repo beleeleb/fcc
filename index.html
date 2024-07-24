@@ -1,276 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Yan Pelov, Frontend Backend Full Stack Software Developer, Portfolio "
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./responsive/app/css/personal.css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600&display=swap"
-      rel="stylesheet"
-    />
-    <title id="title">My FreeCodeCamp Projects</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-B0G3ENW8F7"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-B0G3ENW8F7");
-    </script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yan Pelov, Frontend Backend Full Stack Software Developer, Portfolio " />
+  <link rel="stylesheet" type="text/css" href="./responsive/app/css/personal.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600&display=swap"
+    rel="stylesheet" />
+  <title id="title">My FreeCodeCamp Projects</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0G3ENW8F7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  <body class="reset-all">
-    <section id="topbar" class="topbar-style">
-      <a class="side-menu-icon" id="side-menu-icon-id">☰</a>
+    gtag('config', 'G-B0G3ENW8F7');
+  </script>
+</head>
+
+<body class="reset-all">
+  <section id="topbar" class="topbar-style">
+    <a class="side-menu-icon" id="side-menu-icon-id">☰</a>
+  </section>
+  <section id="navbar" class="navbar-style">
+    <div class="links">
+      <a href="#welcome-section">About Me</a>
+
+      <a href="#projects">My Projects</a>
+    </div>
+  </section>
+
+  <section id="profiles" class="profiles-style">
+    <a id="profile-link" href="https://stackoverflow.com/users/6098812" target="_blank" rel="noopener">
+      <img class="main-img" src="./responsive/assets/apple-touch-icon@2.webp" alt="stackoverflow logo" /></a>
+    <a id="profile-link" href="https://github.com/yanpelov" target="_blank" rel="noopener">
+      <img class="main-img" src="./responsive/assets/GitHub-Mark.webp" alt="github logo" /></a>
+    <a id="profile-link" href="https://www.linkedin.com/in/yanpe/" target="_blank" rel="noopener">
+      <img class="main-img" src="./responsive/assets/LinkedIn_UI-03-512.webp" alt="linkedin logo" /></a>
+  </section>
+
+  <div id="welcome-section" class="welcome-style">
+    <section class="info-and-img">
+      <section id="myinfo" class="info">
+        <h1>Yan Pelov</h1>
+        <h2>Software Developer</h2>
+        <h3>
+          Hi! I am Yan and I love to code for fun and profit. Feel free to
+          check out my latest open source projects!
+          <br><br>
+          <a href="https://drive.google.com/file/d/1FbN7SeayChEfB_9WlZtRjeYWs5HQcBxz/view?usp=sharing"
+            download><strong>==> CV<strong></a>
+        </h3>
+      </section>
+      <section id="profile-picture" class="profile-picture-style">
+        <img class="main-img" src="./responsive/assets/Yan.webp" alt="profile photo" />
+      </section>
     </section>
-    <section id="navbar" class="navbar-style">
-      <div class="links">
-        <a href="#welcome-section">About Me</a>
 
-        <a href="#projects">My Projects</a>
+    <section class="projects-title">
+      <h1>Personal Projects</h1>
+      <h2>My solo and team projects</h2>
+    </section>
+    <section class="projects" id="projects">
+
+      <div class="project-tile">
+        <a class="img-link" href="http://archie-beeri-website.react.dev.s3-website.eu-west-2.amazonaws.com"
+          target="_blank" rel="noopener"><img class="tile-img" src="./responsive/assets/archie.webp"
+            alt="gmail cleaner project screenshot" /></a>
+        <a class="img-title" href="http://archie-beeri-website.react.dev.s3-website.eu-west-2.amazonaws.com"
+          target="_blank" rel="noopener">
+          <h1>Be'eri Archive</h1>
+          <h2>React Frontend Project</h2>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a class="img-link" href="https://gifted-ritchie-a99d08.netlify.app/" target="_blank" rel="noopener"><img
+            class="tile-img" src="./responsive/assets/gmailcleaner.webp" alt="gmail cleaner project screenshot" /></a>
+        <a class="img-title" href="https://gifted-ritchie-a99d08.netlify.app/" target="_blank" rel="noopener">
+          <h1>Gmail Cleaner</h1>
+          <h2>Chingu Team Project - Voyage #22</h2>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a class="img-link" href="https://yanpelov.github.io/soloChingu/" target="_blank" rel="noopener"><img
+            class="tile-img" src="./responsive/assets/mapbox.webp" alt="mapbox project screenshot" /></a>
+        <a class="img-title" href="https://yanpelov.github.io/soloChingu/" target="_blank" rel="noopener">
+          <h1>Attractions Map</h1>
+          <h2>Chingu Solo Project</h2>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a class="img-link" href="responsive/docs/index.html" target="_blank" rel="noopener"><img class="tile-img"
+            src="./responsive/assets/docs.webp" alt="fcc docs project screenshot" /></a>
+        <a class="img-title" href="responsive/docs/index.html" target="_blank" rel="noopener">
+          <h1>Documentation Demo</h1>
+          <h2>freeCodeCamp Project</h2>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a class="img-link" href="responsive/survey/index.html" target="_blank" rel="noopener"><img class="tile-img"
+            src="./responsive/assets/survey.webp" alt="fcc survey project screenshot" /></a>
+        <a class="img-title" href="responsive/survey/index.html" target="_blank" rel="noopener">
+          <h1>Pet Survey</h1>
+          <h2>freeCodeCamp Project</h2>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a class="img-link" href="responsive/tribute/index.html" target="_blank" rel="noopener"><img class="tile-img"
+            src="./responsive/assets/tribute.webp" alt="fcc tribute project screenshot" /></a>
+        <a class="img-title" href="responsive/tribute/index.html" target="_blank" rel="noopener">
+          <h1>Tribute Page</h1>
+          <h2>freeCodeCamp Project</h2>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a class="img-link" href="https://v16-geckos-2-production.netlify.app/" target="_blank" rel="noopener"><img
+            class="tile-img" src="./responsive/assets/dashy.webp" alt="chingu dashy project screenshot" /></a>
+        <a class="img-title" href="https://v16-geckos-2-production.netlify.app/" target="_blank" rel="noopener">
+          <h1>Dashy</h1>
+          <h2>Chingu Team Project - Voyage #16</h2>
+        </a>
       </div>
     </section>
 
-    <section id="profiles" class="profiles-style">
-      <a
-        id="profile-link"
-        href="https://stackoverflow.com/users/6098812"
-        target="_blank"
-        rel="noopener"
-      >
-        <img
-          class="main-img"
-          src="./responsive/assets/apple-touch-icon@2.webp"
-          alt="stackoverflow logo"
-      /></a>
-      <a
-        id="profile-link"
-        href="https://github.com/yanpelov"
-        target="_blank"
-        rel="noopener"
-      >
-        <img
-          class="main-img"
-          src="./responsive/assets/GitHub-Mark.webp"
-          alt="github logo"
-      /></a>
-      <a
-        id="profile-link"
-        href="https://www.linkedin.com/in/yanpe/"
-        target="_blank"
-        rel="noopener"
-      >
-        <img
-          class="main-img"
-          src="./responsive/assets/LinkedIn_UI-03-512.webp"
-          alt="linkedin logo"
-      /></a>
+    <section id="footer">
+      <a href="https://dribbble.com/shots/14262609-Personal-Portfolio-Web-Design-Mobile-Layout-Concept" target="_blank"
+        rel="noopener">
+        credit: inspired by this excellent design</a>
     </section>
+  </div>
+</body>
+<script src="./responsive/app/js/personal.js"></script>
 
-    <div id="welcome-section" class="welcome-style">
-      <section class="info-and-img">
-        <section id="myinfo" class="info">
-          <h1>Yan Pelov</h1>
-          <h2>Software Developer</h2>
-          <h3>
-            Hi! I am Yan and I love to code for fun and profit. Feel free to
-            check out my latest open source projects!
-           <br><br>
-            <a
-              href="https://drive.google.com/file/d/1FbN7SeayChEfB_9WlZtRjeYWs5HQcBxz/view?usp=sharing"
-              download
-              ><strong>==> CV<strong></a
-            >
-          </h3>
-        </section>
-        <section id="profile-picture" class="profile-picture-style">
-          <img
-            class="main-img"
-            src="./responsive/assets/Yan.webp"
-            alt="profile photo"
-          />
-        </section>
-      </section>
-
-      <section class="projects-title">
-        <h1>Personal Projects</h1>
-        <h2>My solo and team projects</h2>
-      </section>
-      <section class="projects" id="projects">
-
-          <div class="project-tile">
-              <a
-                class="img-link"
-                href="http://archie-beeri-website.react.dev.s3-website.eu-west-2.amazonaws.com"
-                target="_blank"
-                rel="noopener"
-                ><img
-                  class="tile-img"
-                  src="./responsive/assets/archie.webp"
-                  alt="gmail cleaner project screenshot"
-              /></a>
-              <a
-                class="img-title"
-                href="http://archie-beeri-website.react.dev.s3-website.eu-west-2.amazonaws.com"
-                target="_blank"
-                rel="noopener"
-                ><h1>Be'eri Archive</h1>
-                <h2>React Frontend Project</h2></a
-              >
-            </div>
-
-        <div class="project-tile">
-          <a
-            class="img-link"
-            href="https://gifted-ritchie-a99d08.netlify.app/"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="tile-img"
-              src="./responsive/assets/gmailcleaner.webp"
-              alt="gmail cleaner project screenshot"
-          /></a>
-          <a
-            class="img-title"
-            href="https://gifted-ritchie-a99d08.netlify.app/"
-            target="_blank"
-            rel="noopener"
-            ><h1>Gmail Cleaner</h1>
-            <h2>Chingu Team Project - Voyage #22</h2></a
-          >
-        </div>
-
-        <div class="project-tile">
-          <a
-            class="img-link"
-            href="https://yanpelov.github.io/soloChingu/"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="tile-img"
-              src="./responsive/assets/mapbox.webp"
-              alt="mapbox project screenshot"
-          /></a>
-          <a
-            class="img-title"
-            href="https://yanpelov.github.io/soloChingu/"
-            target="_blank"
-            rel="noopener"
-            ><h1>Attractions Map</h1>
-            <h2>Chingu Solo Project</h2></a
-          >
-        </div>
-
-        <div class="project-tile">
-          <a
-            class="img-link"
-            href="responsive/docs/index.html"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="tile-img"
-              src="./responsive/assets/docs.webp"
-              alt="fcc docs project screenshot"
-          /></a>
-          <a
-            class="img-title"
-            href="responsive/docs/index.html"
-            target="_blank"
-            rel="noopener"
-            ><h1>Documentation Demo</h1>
-            <h2>freeCodeCamp Project</h2>
-          </a>
-        </div>
-
-        <div class="project-tile">
-          <a
-            class="img-link"
-            href="responsive/survey/index.html"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="tile-img"
-              src="./responsive/assets/survey.webp"
-              alt="fcc survey project screenshot"
-          /></a>
-          <a
-            class="img-title"
-            href="responsive/survey/index.html"
-            target="_blank"
-            rel="noopener"
-            ><h1>Pet Survey</h1>
-            <h2>freeCodeCamp Project</h2></a
-          >
-        </div>
-
-        <div class="project-tile">
-          <a
-            class="img-link"
-            href="responsive/tribute/index.html"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="tile-img"
-              src="./responsive/assets/tribute.webp"
-              alt="fcc tribute project screenshot"
-          /></a>
-          <a
-            class="img-title"
-            href="responsive/tribute/index.html"
-            target="_blank"
-            rel="noopener"
-            ><h1>Tribute Page</h1>
-            <h2>freeCodeCamp Project</h2></a
-          >
-        </div>
-
-        <div class="project-tile">
-          <a
-            class="img-link"
-            href="https://v16-geckos-2-production.netlify.app/"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="tile-img"
-              src="./responsive/assets/dashy.webp"
-              alt="chingu dashy project screenshot"
-          /></a>
-          <a
-            class="img-title"
-            href="https://v16-geckos-2-production.netlify.app/"
-            target="_blank"
-            rel="noopener"
-            ><h1>Dashy</h1>
-            <h2>Chingu Team Project - Voyage #16</h2></a
-          >
-        </div>
-      </section>
-
-      <section id="footer">
-        <a
-          href="https://dribbble.com/shots/14262609-Personal-Portfolio-Web-Design-Mobile-Layout-Concept"
-          target="_blank"
-          rel="noopener"
-        >
-          credit: inspired by this excellent design</a
-        >
-      </section>
-    </div>
-  </body>
-  <script src="./responsive/app/js/personal.js"></script>
 </html>
